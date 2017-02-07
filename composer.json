@@ -14,20 +14,9 @@
   "type": "yii2-extension",
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "replace": {
-    "bower-asset/jquery": "*",
-    "bower-asset/jquery.inputmask": "*",
-    "bower-asset/punycode": "*",
-    "bower-asset/yii2-pjax": "*",
-    "bower-asset/bootstrap": "*",
-    "bower-asset/html5shiv": "*",
-    "bower-asset/respond": "*",
-    "bower-asset/simple-line-icons": "*",
-    "bower-asset/datatables": "*",
-    "bower-asset/datatables-plugins": "*"
-  },
   "require": {
     "php": ">=5.6.0",
+    "oomphinc/composer-installers-extender": "*",
     "yiisoft/yii2": ">=2.0.0",
     "yiisoft/yii2-bootstrap": "2.0.*",
     "mimicreative/yii2-html5shiv": "*",
@@ -42,6 +31,12 @@
   "require-dev": {
     "firephp/firephp-core": "dev-master"
   },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
   "extra": {
     "asset-installer-paths": {
       "npm-asset-library": "vendor/npm",
