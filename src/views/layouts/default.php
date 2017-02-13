@@ -2,8 +2,11 @@
 
 /** @var \yii\web\View $this */
 
+use haqqi\chopper\Chopper;
 use yii\helpers\Html;
 use yii\helpers\Url;
+
+Chopper::getComponent()->registerThemeAsset($this);
 
 $this->beginPage();
 
@@ -33,7 +36,32 @@ $this->beginPage();
   <body>
   <?php $this->beginBody(); ?>
 
-  <?= $content; ?>
+  <div id="wrapper">
+    <header id="main-header">
+        
+    </header>
+
+    <!-- Left navbar-sidebar -->
+    <aside id="main-sidebar">
+
+    </aside>
+    <!-- Left navbar-sidebar end -->
+
+    <!-- #page-wrapper -->
+    <div id="page-wrapper">
+      <div id="page-content">
+
+          <?= $content; ?>
+      </div>
+    </div>
+    <!-- /#page-wrapper -->
+
+    <!-- #main-footer -->
+    <footer id="main-footer">
+        <?php echo Chopper::getParams('footer'); ?>
+    </footer>
+    <!-- /#main-footer -->
+  </div>
 
   <?php $this->endBody(); ?>
   </body>
