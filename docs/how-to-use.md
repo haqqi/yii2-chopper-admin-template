@@ -17,15 +17,6 @@ First thing first, you need to define new component in the application configura
 ]
 ```
 
-You will need to define the component in the bootstrap configuration. This will ensure the configuration and params is loaded correctly.
-
-```php
-'bootstrap' => [
-    'log', // usually this is the default boostrapped components
-    'chopper'
-]
-```
-
 Layout
 ------
 

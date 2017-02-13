@@ -2,12 +2,11 @@
 
 namespace haqqi\chopper;
 
-use yii\base\BootstrapInterface;
 use yii\base\Component;
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 
-class Chopper extends Component implements BootstrapInterface
+class Chopper extends Component
 {
     /** @var string Final component name to be used in the application */
     public static $componentName = 'chopper';
@@ -28,22 +27,6 @@ class Chopper extends Component implements BootstrapInterface
     ////////////////////////////////////////////
     ///// Template variable area ///////////////
     ////////////////////////////////////////////
-
-
-    public function bootstrap($app)
-    {
-        // setup default params for chopper template
-        $app->params = ArrayHelper::merge(require(__DIR__ . '/config/params.php'), \Yii::$app->params);
-
-        // override the definitions if any
-        \Yii::$container->setDefinitions(require(__DIR__ . '/config/definitions.php'));
-    }
-
-    public function __construct($config = [])
-    {
-        parent::__construct($config);
-    }
-
 
     public static function getComponent()
     {
