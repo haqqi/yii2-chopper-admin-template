@@ -29,7 +29,8 @@
     "mimicreative/yii2-datatables": "@dev"
   },
   "require-dev": {
-    "firephp/firephp-core": "dev-master"
+    "firephp/firephp-core": "dev-master",
+    "ccampbell/chromephp": "~4.1"
   },
   "repositories": [
     {
