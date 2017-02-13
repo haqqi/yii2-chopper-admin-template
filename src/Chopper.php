@@ -2,16 +2,16 @@
 
 namespace haqqi\chopper;
 
-use mimicreative\datatables\assets\DataTableAsset;
 use yii\base\BootstrapInterface;
 use yii\base\Component;
-use yii\web\View;
+use yii\base\InvalidConfigException;
+use yii\helpers\ArrayHelper;
 
 class Chopper extends Component implements BootstrapInterface
 {
     /** @var string Final component name to be used in the application */
     public static $componentName = 'chopper';
-    
+
     /** @var string Version of this extension */
     public static $version = '1.0';
 
@@ -28,30 +28,34 @@ class Chopper extends Component implements BootstrapInterface
     ////////////////////////////////////////////
     ///// Template variable area ///////////////
     ////////////////////////////////////////////
-    
-    
+
+
     public function bootstrap($app)
     {
-        \Yii::$container->set('yii\web\JqueryAsset', [
-            'js'        => ['jquery.min.js'],
-            'jsOptions' => ['position' => View::POS_HEAD]
-        ]);
+        // setup default params for chopper template
+        $app->params = ArrayHelper::merge(require(__DIR__ . '/config/params.php'), \Yii::$app->params);
 
-        \Yii::$container->set('yii\bootstrap\BootstrapAsset', [
-            'css' => ['css/bootstrap.min.css']
-        ]);
+        // override the definitions if any
+        \Yii::$container->setDefinitions(require(__DIR__ . '/config/definitions.php'));
+    }
 
-        \Yii::$container->set('yii\bootstrap\BootstrapPluginAsset', [
-            'js'        => ['js/bootstrap.min.js'],
-            'jsOptions' => ['position' => View::POS_HEAD]
-        ]);
+    public function __construct($config = [])
+    {
+        parent::__construct($config);
+    }
 
-        \Yii::$container->set('mimicreative\assets\MetisMenuAsset', [
-            'css' => []
-        ]);
 
-        \Yii::$container->set('mimicreative\datatables\assets\DataTableAsset', [
-            'styling' => DataTableAsset::STYLING_BOOTSTRAP
-        ]);
+    public static function getComponent()
+    {
+        try {
+            return \Yii::$app->get(self::$componentName);
+        } catch (InvalidConfigException $e) {
+            throw new InvalidConfigException('Component name should be set and named "' . self::$componentName . '".');
+        }
+    }
+
+    public static function getParams($key)
+    {
+        return ArrayHelper::getValue(\Yii::$app->params, 'chopper.'.$key, null);
     }
 }
