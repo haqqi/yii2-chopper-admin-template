@@ -2,9 +2,11 @@
 
 namespace haqqi\chopper;
 
+use haqqi\chopper\assets\ChopperAsset;
 use yii\base\Component;
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
+use yii\web\AssetBundle;
 
 class Chopper extends Component
 {
@@ -28,6 +30,20 @@ class Chopper extends Component
     ///// Template variable area ///////////////
     ////////////////////////////////////////////
 
+    /** @var string Asset bundle class to be registered in the layout. Customizable via configuration. This class must depends on ChopperAsset. The default will be ChopperAsset itself. */
+    public $assetBundleClass;
+
+    public function __construct($config = [])
+    {
+        $this->assetBundleClass = ChopperAsset::className();
+
+        parent::__construct($config);
+    }
+
+    /**
+     * @return null|Chopper|object
+     * @throws InvalidConfigException
+     */
     public static function getComponent()
     {
         try {
@@ -39,6 +55,28 @@ class Chopper extends Component
 
     public static function getParams($key)
     {
-        return ArrayHelper::getValue(\Yii::$app->params, 'chopper.'.$key, null);
+        return ArrayHelper::getValue(\Yii::$app->params, 'chopper.' . $key, null);
+    }
+
+    /**
+     * @param string $filepath
+     * @return string
+     */
+    public function getAssetUrl($filepath = '')
+    {
+        $bundles = \Yii::$app->assetManager->bundles;
+        
+        if (!isset($bundles[ChopperAsset::className()])) {
+            throw new InvalidConfigException('Asset bundle class must use or depends on ChopperAsset bundle.');
+        }
+        
+        return $bundles[ChopperAsset::className()]->baseUrl . '/' . $filepath;
+    }
+
+    public function registerThemeAsset($view)
+    {
+        /** @var AssetBundle $assetBundleClass */
+        $assetBundleClass = $this->assetBundleClass;
+        $assetBundleClass::register($view);
     }
 }

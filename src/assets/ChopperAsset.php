@@ -13,7 +13,7 @@ class ChopperAsset extends AssetBundle
     ];
     
     public $css = [
-        
+        'css/chopper-main.css'
     ];
     
     public $js = [
