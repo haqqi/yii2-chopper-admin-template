@@ -9,7 +9,11 @@ class ChopperAsset extends AssetBundle
     public $sourcePath = '@haqqi/chopper/web';
     
     public $depends = [
-        
+        'yii\web\YiiAsset',
+        'yii\bootstrap\BootstrapAsset',
+        'yii\bootstrap\BootstrapPluginAsset',
+        'mimicreative\assets\Html5ShivAsset',
+        'mimicreative\assets\RespondAsset',
     ];
     
     public $css = [
