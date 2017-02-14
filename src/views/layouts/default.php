@@ -41,40 +41,26 @@ $this->beginPage();
             <nav class="navbar navbar-default navbar-static-top">
                 <div class="container-fluid">
                     
-                    
-                    <div class="navbar-header pull-right">
-                        <ul class="nav pull-left">
-                            <li class="navbar-text pull-left">User Name</li>
-                            <li class="dropdown pull-right">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </nav>
         </header>
+        
+        <div id="page-container">
+            <!-- Left navbar-sidebar -->
+            <aside id="main-sidebar">
 
-        <!-- Left navbar-sidebar -->
-        <aside id="main-sidebar">
+            </aside>
+            <!-- Left navbar-sidebar end -->
 
-        </aside>
-        <!-- Left navbar-sidebar end -->
+            <!-- #page-wrapper -->
+            <div id="page-wrapper">
+                <div id="page-content">
 
-        <!-- #page-wrapper -->
-        <div id="page-wrapper">
-            <div id="page-content">
-
-                <?= $content; ?>
+                    <?= $content; ?>
+                </div>
             </div>
+            <!-- /#page-wrapper -->
         </div>
-        <!-- /#page-wrapper -->
 
         <!-- #main-footer -->
         <footer id="main-footer">

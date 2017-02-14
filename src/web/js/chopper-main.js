@@ -8,13 +8,11 @@ $(document).ready(function () {
     var windowWidth = getScreenOrWindowWidth();
     var windowHeight = getScreenOrWindowHeight();
 
-    if (windowWidth < screenSmMin) {
-      $('#main-sidebar').addClass('collapse');
-    } else {
-      $('#main-sidebar').removeClass('collapse').css("height", "100%");
-    }
-    
-    console.log("jalan");
+    // if (windowWidth < screenSmMin) {
+    //   $('#main-sidebar').addClass('collapse');
+    // } else {
+    //   $('#main-sidebar').removeClass('collapse').css("height", "100%");
+    // }
 
     if (windowHeight > (topOffset + bottomOffset)) {
       var pageHeight = windowHeight - topOffset - bottomOffset;
