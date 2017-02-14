@@ -9,7 +9,7 @@
     "gulp": "3.*",
     "gulp-autoprefixer": "3.*",
     "gulp-debug": "2.*",
-    "gulp-prettyerror": "1.*",
+    "gulp-plumber": "1.*",
     "gulp-sass": "2.*",
     "npm-run-all": "2.*"
   }

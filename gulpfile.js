@@ -1,6 +1,6 @@
 // require all the libraries
-const gulp          = require('gulp'),
-  prettyError   = require('gulp-prettyerror'),
+const gulp      = require('gulp'),
+  plumber       = require('gulp-plumber'),
   debug         = require('gulp-debug'),
   sass          = require('gulp-sass'),
   autoPrefixer  = require('gulp-autoprefixer');
@@ -17,7 +17,7 @@ const sassSources = {
 
 function processSass(src, dest) {
   return gulp.src(src)
-    .pipe(prettyError())
+    .pipe(plumber())
     .pipe(debug({
       title: 'Compiling SASS file(s):'
     }))
