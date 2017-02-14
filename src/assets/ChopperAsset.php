@@ -21,7 +21,8 @@ class ChopperAsset extends AssetBundle
         'https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,700,700i',
         'https://fonts.googleapis.com/css?family=Oswald:300,400,700',
         
-        'css/chopper-main.css'
+        'css/chopper-main.css',
+        'css/styles/default.css' // default style   
     ];
     
     public $js = [

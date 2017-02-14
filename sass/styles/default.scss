@@ -1,0 +1,19 @@
+
+@import "../mixins/style-generator";
+
+// variables area
+$navbar-bg          : #2b3643;
+$sidebar-bg         : lighten($navbar-bg, 7%);
+$page-wrapper-bg    : #edf1f5;
+$footer-bg          : lighten($navbar-bg, 12%);
+$footer-color       : #7993B0;
+
+
+
+
+// end of variables area
+////////////////////////
+
+// use mixin
+
+@include style-generator();

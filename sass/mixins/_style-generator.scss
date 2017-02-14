@@ -1,0 +1,42 @@
+
+
+@mixin style-generator {
+	#main-header {
+		.navbar {
+			background-color: $navbar-bg;
+		}
+	}
+
+	//.navbar-toggle {
+	//	color: $navbar-toggle-color;
+    //
+	//	&:hover, &:focus {
+	//		color: $navbar-toggle-color;
+	//	}
+    //
+	//	&:hover {
+	//		background-color: lighten($navbar-bg, 3%);
+	//	}
+	//}
+	
+	#main-sidebar {
+		background-color: $sidebar-bg;
+	}
+	
+	#page-wrapper {
+		background-color: $page-wrapper-bg;
+	}
+
+	#main-footer {
+		background-color: $footer-bg;
+		color: $footer-color;
+		
+		a {
+			color: lighten($footer-color, 10%);
+			
+			&:hover, &:active, &:focus {
+				color: lighten($footer-color, 12%);
+			}
+		}
+	}
+}

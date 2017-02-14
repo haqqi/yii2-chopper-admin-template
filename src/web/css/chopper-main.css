@@ -5,7 +5,6 @@ Yii2 Chopper Template Admin - Main SCSS File
   margin-bottom: 0;
   border: 0;
   height: 50px;
-  background-color: #2b3643;
 }
 
 * {
@@ -40,15 +39,12 @@ p + p {
   top: 0;
   width: 100%;
   z-index: 100;
-  background-color: #394859;
 }
 
 @media (min-width: 768px) {
   #main-sidebar {
     width: 240px;
-    position: absolute;
-    height: 100%;
-    box-shadow: 2px 0px 10px 0px rgba(50, 50, 50, 0.2);
+    bottom: 0;
   }
 }
 
@@ -58,7 +54,6 @@ p + p {
 
 #page-wrapper {
   position: relative;
-  background-color: #edf1f5;
 }
 
 @media (min-width: 768px) {
@@ -70,23 +65,15 @@ p + p {
 #main-footer {
   position: relative;
   z-index: 500;
-  background-color: white;
-  color: #7993B0;
   min-height: 40px;
   text-align: center;
   font-size: 12px;
   line-height: 20px;
-  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.2);
   padding: 10px 10px;
-}
-
-#main-footer a {
-  color: #99adc3;
 }
 
 #main-footer a:hover, #main-footer a:active, #main-footer a:focus {
   text-decoration: none;
-  color: #99adc3;
 }
 
 @media (min-width: 768px) {

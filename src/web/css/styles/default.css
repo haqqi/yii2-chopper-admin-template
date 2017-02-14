@@ -1,0 +1,24 @@
+#main-header .navbar {
+  background-color: #2b3643;
+}
+
+#main-sidebar {
+  background-color: #394859;
+}
+
+#page-wrapper {
+  background-color: #edf1f5;
+}
+
+#main-footer {
+  background-color: #435468;
+  color: #7993B0;
+}
+
+#main-footer a {
+  color: #99adc3;
+}
+
+#main-footer a:hover, #main-footer a:active, #main-footer a:focus {
+  color: #a0b2c7;
+}
