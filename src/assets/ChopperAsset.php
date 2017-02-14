@@ -25,7 +25,7 @@ class ChopperAsset extends AssetBundle
     ];
     
     public $js = [
-        
+        'js/chopper-main.js'
     ];
     
     public $publishOptions = [

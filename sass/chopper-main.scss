@@ -2,8 +2,16 @@
 Yii2 Chopper Template Admin - Main SCSS File
  */
 
+// variables
 @import "../sass-bootstrap-3/variables";
 @import "global/variables";
 
+// mixins
+@import "../sass-bootstrap-3/mixins";
+
+// bootstrap overrides
+@import "bootstrap-overrides/navbar";
+
 @import "global/type";
+@import "layouts/common";
 

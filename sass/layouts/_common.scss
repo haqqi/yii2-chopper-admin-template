@@ -1,4 +1,40 @@
-* {
-    outline: none !important;
+#wrapper {
+    position: relative;
+}
+
+#main-header {
+    
+}
+
+#main-sidebar {
+    
+}
+
+#page-wrapper {
+    background-color: $page-wrapper-bg; // @style
+}
+
+#main-footer {
+    min-height: $footer-height;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    color: $footer-font-color;
+
+    padding: 10px $page-content-padding-xs;
+
+    a {
+        color: lighten($footer-font-color, 10%);
+
+        &:hover, &:active, &:focus {
+            text-decoration: none;
+            color: #7993B0;
+        }
+    }
+
+    @media (min-width: $screen-sm-min) {
+        padding-left: $page-content-padding;
+        padding-right: $page-content-padding;
+    }
 }
 

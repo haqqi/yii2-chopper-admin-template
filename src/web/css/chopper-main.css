@@ -1,8 +1,20 @@
 /**
 Yii2 Chopper Template Admin - Main SCSS File
  */
+.navbar {
+  margin-bottom: 0;
+  border: 0;
+  height: 50px;
+  background-color: #2b3643;
+}
+
+* {
+  outline: none !important;
+}
+
 body {
   font-family: "Muli", sans-serif;
+  font-size: 13px;
   color: #333333;
 }
 
@@ -16,4 +28,37 @@ p {
 
 p + p {
   margin-top: 10px;
+}
+
+#wrapper {
+  position: relative;
+}
+
+#page-wrapper {
+  background-color: #edf1f5;
+}
+
+#main-footer {
+  min-height: 40px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  color: #7993B0;
+  padding: 10px 10px;
+}
+
+#main-footer a {
+  color: #99adc3;
+}
+
+#main-footer a:hover, #main-footer a:active, #main-footer a:focus {
+  text-decoration: none;
+  color: #7993B0;
+}
+
+@media (min-width: 768px) {
+  #main-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
