@@ -20,6 +20,16 @@ $(document).ready(function () {
     }
   });
 
+  // navbar toggle change
+  $("#main-sidebar").on("hidden.bs.collapse", function (e) {
+    $("#sidebar-toggle i").addClass("mdi-menu").removeClass("mdi-close");
+
+  });
+
+  $("#main-sidebar").on("shown.bs.collapse", function (e) {
+    $("#sidebar-toggle i").removeClass("mdi-menu").addClass("mdi-close");
+  });
+
   function getScreenOrWindowWidth() {
     return (window.innerWidth > 0) ? window.innerWidth : screen.width;
   }

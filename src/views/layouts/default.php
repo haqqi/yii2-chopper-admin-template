@@ -41,7 +41,6 @@ $this->beginPage();
             <nav class="navbar navbar-static-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        ff
                     </div>
                 </div>
 
