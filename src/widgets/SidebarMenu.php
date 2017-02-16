@@ -40,7 +40,7 @@ class SidebarMenu extends Menu
      * The token `{arrow}` will be replaced with the corresponding link arrow.
      * This property will be overridden by the `template` option set in individual menu items via [[items]].
      */
-    public $linkTemplate = '<a {aria-expanded} href="{url}">{icon}{label}{badge}{arrow}</a>';
+    public $linkTemplate = '<a {aria-expanded} class="{active}" href="{url}">{icon}{label}{badge}{arrow}</a>';
 
     public $headingTemplate = "{icon}{label}{badge}{arrow}";
 
@@ -162,6 +162,7 @@ class SidebarMenu extends Menu
             : ArrayHelper::getValue($item, 'template', $this->linkTemplate);
 
         return strtr($template, [
+            '{active}'        => $item['active'] ? $this->activeCssClass : '',
             '{aria-expanded}' => $this->_formatAriaExpanded($item),
             '{url}'           => $this->_formatItemUrl($item),
             '{label}'         => $this->_formatItemLabel($item),
