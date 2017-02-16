@@ -7,6 +7,29 @@ Yii2 Chopper Template Admin - Main SCSS File
   height: 50px;
 }
 
+.navbar-collapse {
+  border: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+.navbar-toggle {
+  float: none;
+  font-size: 20px;
+  padding: 0 10px;
+  line-height: 50px;
+  border: 0;
+  margin: 0;
+  display: inline-block;
+  border-radius: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
 * {
   outline: none !important;
 }

@@ -38,17 +38,26 @@ $this->beginPage();
 
     <div id="wrapper">
         <header id="main-header">
-            <nav class="navbar navbar-default navbar-static-top">
+            <nav class="navbar navbar-static-top">
                 <div class="container-fluid">
-                    
+                    <div class="navbar-header">
+                        ff
+                    </div>
                 </div>
+
+                <!-- Toggle icon for mobile view -->
+                <a id="sidebar-toggle" class="navbar-toggle" href="javascript:void(0)" data-toggle="collapse" data-target="#main-sidebar">
+                    <i class="mdi mdi-menu"></i>
+                </a>
+                
+                
             </nav>
         </header>
         
         <div id="page-container">
             <!-- Left navbar-sidebar -->
-            <aside id="main-sidebar">
-
+            <aside id="main-sidebar" class="navbar-collapse collapse">
+                
             </aside>
             <!-- Left navbar-sidebar end -->
 

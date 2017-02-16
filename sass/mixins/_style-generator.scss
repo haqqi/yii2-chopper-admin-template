@@ -7,20 +7,21 @@
 		}
 	}
 
-	//.navbar-toggle {
-	//	color: $navbar-toggle-color;
-    //
-	//	&:hover, &:focus {
-	//		color: $navbar-toggle-color;
-	//	}
-    //
-	//	&:hover {
-	//		background-color: lighten($navbar-bg, 3%);
-	//	}
-	//}
+	.navbar-toggle {
+		color: $navbar-toggle-color;
+
+		&:hover, &:focus {
+			color: $navbar-toggle-color;
+		}
+
+		&:hover {
+			background-color: lighten($navbar-bg, 3%);
+		}
+	}
 	
 	#main-sidebar {
 		background-color: $sidebar-bg;
+		color: $sidebar-color;
 	}
 	
 	#page-wrapper {

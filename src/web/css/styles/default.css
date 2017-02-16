@@ -2,8 +2,21 @@
   background-color: #2b3643;
 }
 
+.navbar-toggle {
+  color: white;
+}
+
+.navbar-toggle:hover, .navbar-toggle:focus {
+  color: white;
+}
+
+.navbar-toggle:hover {
+  background-color: #313e4c;
+}
+
 #main-sidebar {
   background-color: #394859;
+  color: #edf1f5;
 }
 
 #page-wrapper {
