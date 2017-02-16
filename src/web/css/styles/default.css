@@ -19,6 +19,31 @@
   color: #edf1f5;
 }
 
+#main-sidebar .sidebar-nav li.heading {
+  color: #c6cfda;
+}
+
+#main-sidebar .sidebar-nav li > a {
+  color: #a7b5c6;
+}
+
+#main-sidebar .sidebar-nav li > a:hover {
+  color: #97a8bc;
+  background-color: #3d4d5f;
+}
+
+#main-sidebar .sidebar-nav li.active > a {
+  background-color: #3d4d5f;
+}
+
+#main-sidebar .sidebar-nav > li {
+  border-top: 1px solid #3f4f62;
+}
+
+#main-sidebar .sidebar-nav > li.active > a {
+  background-color: #3d4d5f;
+}
+
 #page-wrapper {
   background-color: #edf1f5;
 }

@@ -1,6 +1,5 @@
-
-
-$secondLevelPadding: 47px;
+// padding for second level menu
+$secondLevelPadding: 42px;
 
 #sidebar-menu {
 
@@ -16,10 +15,9 @@ $secondLevelPadding: 47px;
 		// style list per menu in general
 		li {
 			&.heading {
-				padding: 10px 20px 4px 20px;
+				padding: 10px 15px 4px 15px;
 				margin-top: 10px;
 				font-weight: 400;
-				color: #989898;
 				font-size: 12px;
 				line-height: 20px;
 				text-transform: uppercase;
@@ -37,18 +35,17 @@ $secondLevelPadding: 47px;
 				vertical-align: -8%;
 			}
 			i.mdi {
-				vertical-align: -16%;
+				vertical-align: -3px;
 				margin-right: 3px;
 				margin-left: 2px;
 			}
 
 			> a {
 				// with right arrow
-				padding: 6px 35px 6px 20px;
+				padding: 5px 30px 5px 15px;
 				display: block;
-				color: #54667a;
 				position: relative;
-				font-size: 14px;
+				font-size: 13px;
 				line-height: 20px;
 
 				.label {
@@ -64,23 +61,18 @@ $secondLevelPadding: 47px;
 				// arrow pull right
 				.menu-arrow {
 					position: absolute;
-					right: 12px;
-					top: 11px;
+					right: 7px;
+					top: 6px;
 					font-size: 18px;
 				}
 
 				&:hover, &:focus {
 					text-decoration: none;
 				}
-				&:hover {
-					color: darken(#54667a, 5%);
-					background-color: rgba(150, 150, 150, 0.1);
-				}
 			}
 
 			&.active {
 				> a {
-					background-color: rgba(150, 150, 150, 0.1);
 					> .menu-arrow:before {
 						content: ""
 					}
@@ -91,18 +83,9 @@ $secondLevelPadding: 47px;
 		> li {
 			// first item of the nav, make it taller
 
-			&.active {
-				> a {
-					background-color: rgba(150, 150, 150, 0.2);
-				}
-			}
-
-			border-top: 1px solid #f0f0f0;
-
 			> a {
 				padding-top: 8px;
 				padding-bottom: 8px;
-
 
 				.menu-arrow {
 					top: 9px;
@@ -110,6 +93,10 @@ $secondLevelPadding: 47px;
 			}
 
 			&.heading + li {
+				border: none;
+			}
+			
+			&:first-child {
 				border: none;
 			}
 		}

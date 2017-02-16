@@ -63,17 +63,19 @@ p + p {
 }
 
 #main-sidebar {
+  max-height: 300px;
   overflow-y: auto;
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 300;
 }
 
 @media (min-width: 768px) {
   #main-sidebar {
     width: 240px;
     bottom: 0;
+    max-height: 100%;
   }
 }
 
@@ -119,10 +121,9 @@ p + p {
 }
 
 #sidebar-menu .sidebar-nav li.heading {
-  padding: 10px 20px 4px 20px;
+  padding: 10px 15px 4px 15px;
   margin-top: 10px;
   font-weight: 400;
-  color: #989898;
   font-size: 12px;
   line-height: 20px;
   text-transform: uppercase;
@@ -141,17 +142,16 @@ p + p {
 }
 
 #sidebar-menu .sidebar-nav li i.mdi {
-  vertical-align: -16%;
+  vertical-align: -3px;
   margin-right: 3px;
   margin-left: 2px;
 }
 
 #sidebar-menu .sidebar-nav li > a {
-  padding: 6px 35px 6px 20px;
+  padding: 5px 30px 5px 15px;
   display: block;
-  color: #54667a;
   position: relative;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
 }
 
@@ -169,8 +169,8 @@ p + p {
 
 #sidebar-menu .sidebar-nav li > a .menu-arrow {
   position: absolute;
-  right: 12px;
-  top: 11px;
+  right: 7px;
+  top: 6px;
   font-size: 18px;
 }
 
@@ -178,25 +178,8 @@ p + p {
   text-decoration: none;
 }
 
-#sidebar-menu .sidebar-nav li > a:hover {
-  color: #4a596b;
-  background-color: rgba(150, 150, 150, 0.1);
-}
-
-#sidebar-menu .sidebar-nav li.active > a {
-  background-color: rgba(150, 150, 150, 0.1);
-}
-
 #sidebar-menu .sidebar-nav li.active > a > .menu-arrow:before {
   content: "";
-}
-
-#sidebar-menu .sidebar-nav > li {
-  border-top: 1px solid #f0f0f0;
-}
-
-#sidebar-menu .sidebar-nav > li.active > a {
-  background-color: rgba(150, 150, 150, 0.2);
 }
 
 #sidebar-menu .sidebar-nav > li > a {
@@ -212,6 +195,10 @@ p + p {
   border: none;
 }
 
+#sidebar-menu .sidebar-nav > li:first-child {
+  border: none;
+}
+
 #sidebar-menu .sidebar-nav ul.sub-menu > li.first {
   margin-top: 6px;
 }
@@ -221,13 +208,73 @@ p + p {
 }
 
 #sidebar-menu .sidebar-nav ul.sub-menu.level-2 > li > a {
-  padding-left: 47px;
+  padding-left: 42px;
 }
 
 #sidebar-menu .sidebar-nav ul.sub-menu.level-3 > li > a {
-  padding-left: 57px;
+  padding-left: 52px;
 }
 
 #sidebar-menu .sidebar-nav ul.sub-menu.level-4 > li > a, #sidebar-menu .sidebar-nav ul.sub-menu.level-5 > li > a, #sidebar-menu .sidebar-nav ul.sub-menu.level-6 > li > a {
-  padding-left: 67px;
+  padding-left: 62px;
+}
+
+.sidebar-scroll.scrollator_lane_holder {
+  width: 5px;
+}
+
+.sidebar-scroll.scrollator_lane_holder.hover, .sidebar-scroll.scrollator_lane_holder:hover {
+  width: 5px;
+}
+
+.sidebar-scroll.scrollator_lane_holder.hover .scrollator_handle_holder, .sidebar-scroll.scrollator_lane_holder:hover .scrollator_handle_holder {
+  width: 5px;
+}
+
+.sidebar-scroll .scrollator_lane {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.sidebar-scroll .scrollator_handle_holder {
+  width: 5px;
+}
+
+.sidebar-scroll .scrollator_handle {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.panel-scroll.scrollator_lane_holder {
+  width: 5px;
+}
+
+.panel-scroll.scrollator_lane_holder.hover, .panel-scroll.scrollator_lane_holder:hover {
+  width: 5px;
+}
+
+.panel-scroll.scrollator_lane_holder.hover .scrollator_handle_holder, .panel-scroll.scrollator_lane_holder:hover .scrollator_handle_holder {
+  width: 5px;
+}
+
+.panel-scroll .scrollator_lane {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.panel-scroll .scrollator_handle_holder {
+  width: 5px;
+}
+
+.panel-scroll .scrollator_handle {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }

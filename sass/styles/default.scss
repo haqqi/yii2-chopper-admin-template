@@ -8,6 +8,9 @@ $navbar-toggle-color: white;
 $sidebar-bg         : lighten($navbar-bg, 7%);
 $sidebar-color      : #edf1f5;
 
+$sidebar-heading-color : lighten($navbar-bg, 60%);
+$sidebar-menu-color    : lighten($navbar-bg, 50%);
+
 $page-wrapper-bg    : #edf1f5;
 
 $footer-bg          : lighten($navbar-bg, 12%);

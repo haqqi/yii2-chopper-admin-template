@@ -34,6 +34,10 @@ $(document).ready(function () {
     $("#sidebar-toggle i").removeClass("mdi-menu").addClass("mdi-close");
   });
 
+  $("#main-sidebar").scrollator({
+    customClass: 'sidebar-scroll'
+  });
+
   function getScreenOrWindowWidth() {
     return (window.innerWidth > 0) ? window.innerWidth : screen.width;
   }
