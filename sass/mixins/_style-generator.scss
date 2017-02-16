@@ -76,14 +76,31 @@
 	
 	#page-header {
 		background-color: $page-header-background-color;
+		color: $page-header-color;
 		
 		.breadcrumb {
+			> li {
+				> a {
+					color: $page-header-breadcrumb-link-color;
+					&:hover {
+						color: lighten($page-header-breadcrumb-link-color, 10%);
+					}
+				}
+			}
+			
 			> .active {
-				color: $breadcrumb-active-color;
+				color: $page-header-breadcrumb-active-color;
 			}
 		}
 		.breadcrumb + h1.title {
 			border-top-color: $page-header-border-color;
+		}
+		
+		h1.title {
+			color: $page-header-title-color;
+		}
+		.description {
+			color: $page-header-description-color;
 		}
 	}
 
