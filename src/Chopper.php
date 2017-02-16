@@ -33,9 +33,14 @@ class Chopper extends Component
     /** @var string Asset bundle class to be registered in the layout. Customizable via configuration. This class must depends on ChopperAsset. The default will be ChopperAsset itself. */
     public $assetBundleClass;
 
+    /** @var string Path to sidebar meu item */
+    public $sidebarMenuItemsPath;
+
     public function __construct($config = [])
     {
         $this->assetBundleClass = ChopperAsset::className();
+
+        $this->sidebarMenuItemsPath = __DIR__ . '/config/sidebar-menu.php';
 
         parent::__construct($config);
     }
@@ -65,11 +70,11 @@ class Chopper extends Component
     public function getAssetUrl($filepath = '')
     {
         $bundles = \Yii::$app->assetManager->bundles;
-        
+
         if (!isset($bundles[ChopperAsset::className()])) {
             throw new InvalidConfigException('Asset bundle class must use or depends on ChopperAsset bundle.');
         }
-        
+
         return $bundles[ChopperAsset::className()]->baseUrl . '/' . $filepath;
     }
 

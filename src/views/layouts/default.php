@@ -3,6 +3,7 @@
 /** @var \yii\web\View $this */
 
 use haqqi\chopper\Chopper;
+use haqqi\chopper\widgets\SidebarMenu;
 use yii\helpers\Html;
 use yii\helpers\Url;
 
@@ -56,7 +57,7 @@ $this->beginPage();
         <div id="page-container">
             <!-- Left navbar-sidebar -->
             <aside id="main-sidebar" class="navbar-collapse collapse">
-                
+                <?php echo SidebarMenu::widget(); ?>
             </aside>
             <!-- Left navbar-sidebar end -->
 
