@@ -1,0 +1,147 @@
+
+
+$secondLevelPadding: 47px;
+
+#sidebar-menu {
+
+	// general style of the list
+	ul, li {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+
+	.sidebar-nav {
+
+		// style list per menu in general
+		li {
+			&.heading {
+				padding: 10px 20px 4px 20px;
+				margin-top: 10px;
+				font-weight: 400;
+				color: #989898;
+				font-size: 12px;
+				line-height: 20px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				font-family: 'Oswald', 'Open Sans', sans-serif;
+				border: none;
+			}
+
+			// icon size
+			i.fa, i.mdi, i.icon- {
+				font-size: 18px;
+				display: inline-block;
+			}
+			i.fa {
+				vertical-align: -8%;
+			}
+			i.mdi {
+				vertical-align: -16%;
+				margin-right: 3px;
+				margin-left: 2px;
+			}
+
+			> a {
+				// with right arrow
+				padding: 6px 35px 6px 20px;
+				display: block;
+				color: #54667a;
+				position: relative;
+				font-size: 14px;
+				line-height: 20px;
+
+				.label {
+					float: right;
+					line-height: 14px;
+					padding: 3px 8px 3px 8px;
+					font-size: 10px;
+					font-weight: 300;
+					@include border-top-radius(10px);
+					@include border-bottom-radius(10px);
+				}
+
+				// arrow pull right
+				.menu-arrow {
+					position: absolute;
+					right: 12px;
+					top: 11px;
+					font-size: 18px;
+				}
+
+				&:hover, &:focus {
+					text-decoration: none;
+				}
+				&:hover {
+					color: darken(#54667a, 5%);
+					background-color: rgba(150, 150, 150, 0.1);
+				}
+			}
+
+			&.active {
+				> a {
+					background-color: rgba(150, 150, 150, 0.1);
+					> .menu-arrow:before {
+						content: ""
+					}
+				}
+			}
+		}
+
+		> li {
+			// first item of the nav, make it taller
+
+			&.active {
+				> a {
+					background-color: rgba(150, 150, 150, 0.2);
+				}
+			}
+
+			border-top: 1px solid #f0f0f0;
+
+			> a {
+				padding-top: 8px;
+				padding-bottom: 8px;
+
+
+				.menu-arrow {
+					top: 9px;
+				}
+			}
+
+			&.heading + li {
+				border: none;
+			}
+		}
+
+		// submenu definition
+		ul.sub-menu {
+			> li.first {
+				margin-top: 6px;
+			}
+			> li.last {
+				margin-bottom: 6px;
+			}
+
+			&.level-2 {
+				> li > a {
+					padding-left: $secondLevelPadding;
+				}
+			}
+			&.level-3 {
+				> li > a {
+					padding-left: $secondLevelPadding + 10px;
+				}
+			}
+			&.level-4, &.level-5, &.level-6 {
+				> li > a {
+					padding-left: $secondLevelPadding + 20px;
+				}
+			}
+		}
+	}
+
+
+}
+
+

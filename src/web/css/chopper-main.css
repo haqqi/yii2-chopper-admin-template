@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
 Yii2 Chopper Template Admin - Main SCSS File
  */
@@ -109,4 +110,124 @@ p + p {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+#sidebar-menu ul, #sidebar-menu li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+#sidebar-menu .sidebar-nav li.heading {
+  padding: 10px 20px 4px 20px;
+  margin-top: 10px;
+  font-weight: 400;
+  color: #989898;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Oswald', 'Open Sans', sans-serif;
+  border: none;
+}
+
+#sidebar-menu .sidebar-nav li i.fa, #sidebar-menu .sidebar-nav li i.mdi, #sidebar-menu .sidebar-nav li i.icon- {
+  font-size: 18px;
+  display: inline-block;
+}
+
+#sidebar-menu .sidebar-nav li i.fa {
+  vertical-align: -8%;
+}
+
+#sidebar-menu .sidebar-nav li i.mdi {
+  vertical-align: -16%;
+  margin-right: 3px;
+  margin-left: 2px;
+}
+
+#sidebar-menu .sidebar-nav li > a {
+  padding: 6px 35px 6px 20px;
+  display: block;
+  color: #54667a;
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#sidebar-menu .sidebar-nav li > a .label {
+  float: right;
+  line-height: 14px;
+  padding: 3px 8px 3px 8px;
+  font-size: 10px;
+  font-weight: 300;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#sidebar-menu .sidebar-nav li > a .menu-arrow {
+  position: absolute;
+  right: 12px;
+  top: 11px;
+  font-size: 18px;
+}
+
+#sidebar-menu .sidebar-nav li > a:hover, #sidebar-menu .sidebar-nav li > a:focus {
+  text-decoration: none;
+}
+
+#sidebar-menu .sidebar-nav li > a:hover {
+  color: #4a596b;
+  background-color: rgba(150, 150, 150, 0.1);
+}
+
+#sidebar-menu .sidebar-nav li.active > a {
+  background-color: rgba(150, 150, 150, 0.1);
+}
+
+#sidebar-menu .sidebar-nav li.active > a > .menu-arrow:before {
+  content: "";
+}
+
+#sidebar-menu .sidebar-nav > li {
+  border-top: 1px solid #f0f0f0;
+}
+
+#sidebar-menu .sidebar-nav > li.active > a {
+  background-color: rgba(150, 150, 150, 0.2);
+}
+
+#sidebar-menu .sidebar-nav > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#sidebar-menu .sidebar-nav > li > a .menu-arrow {
+  top: 9px;
+}
+
+#sidebar-menu .sidebar-nav > li.heading + li {
+  border: none;
+}
+
+#sidebar-menu .sidebar-nav ul.sub-menu > li.first {
+  margin-top: 6px;
+}
+
+#sidebar-menu .sidebar-nav ul.sub-menu > li.last {
+  margin-bottom: 6px;
+}
+
+#sidebar-menu .sidebar-nav ul.sub-menu.level-2 > li > a {
+  padding-left: 47px;
+}
+
+#sidebar-menu .sidebar-nav ul.sub-menu.level-3 > li > a {
+  padding-left: 57px;
+}
+
+#sidebar-menu .sidebar-nav ul.sub-menu.level-4 > li > a, #sidebar-menu .sidebar-nav ul.sub-menu.level-5 > li > a, #sidebar-menu .sidebar-nav ul.sub-menu.level-6 > li > a {
+  padding-left: 67px;
 }
