@@ -14,6 +14,11 @@ class ChopperAsset extends AssetBundle
         'yii\bootstrap\BootstrapPluginAsset',
         'mimicreative\assets\Html5ShivAsset',
         'mimicreative\assets\RespondAsset',
+        'mimicreative\assets\SimpleLineIconsAsset',
+        'mimicreative\assets\MetisMenuAsset',
+        'mimicreative\assets\ScrollatorAsset',
+        'rmrevin\yii\fontawesome\AssetBundle',
+        'yii\materialicons\AssetBundle'
     ];
     
     public $css = [
