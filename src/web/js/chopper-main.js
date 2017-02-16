@@ -6,7 +6,7 @@ $(document).ready(function () {
     var topOffset = $("#main-header").innerHeight();
     var bottomOffset = $("#main-footer").innerHeight();
     var windowWidth = getScreenOrWindowWidth();
-    var windowHeight = getScreenOrWindowHeight();
+    var windowHeight = $(window).innerHeight();
 
     // if (windowWidth < screenSmMin) {
     //   $('#main-sidebar').addClass('collapse');
@@ -15,17 +15,12 @@ $(document).ready(function () {
     // }
 
     if (windowHeight > (topOffset + bottomOffset)) {
-      var pageHeight = windowHeight - topOffset - bottomOffset;
+      var pageHeight = $(window).height() - topOffset - bottomOffset;
       $("#page-wrapper").css("min-height", (pageHeight) + "px");
     }
   });
 
-
   function getScreenOrWindowWidth() {
     return (window.innerWidth > 0) ? window.innerWidth : screen.width;
-  }
-
-  function getScreenOrWindowHeight() {
-    return ((window.innerHeight > 0) ? window.innerHeight : screen.height) - 1;
   }
 });
