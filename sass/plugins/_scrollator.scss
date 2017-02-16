@@ -1,56 +1,42 @@
 // scrollator definition
 .sidebar-scroll {
     &.scrollator_lane_holder {
-        width: 5px;
+        width: 10px;
 
         &.hover, &:hover {
-            width: 5px;
+            width: 10px;
 
+            .scrollator_lane {
+                background-color: transparent;
+            }
+            
             .scrollator_handle_holder {
-                width: 5px;
+                width: 8px;
             }
         }
     }
 
     .scrollator_lane {
-        @include border-top-radius(5px);
-        @include border-bottom-radius(5px);
+        @include border-top-radius(4px);
+        @include border-bottom-radius(4px);
+        top: 4px;
+        left: 1px;
+        right: 1px;
+        bottom: 4px;
     }
 
     .scrollator_handle_holder {
-        width: 5px;
+        width: 8px;
+        margin: 0px;
     }
 
     .scrollator_handle {
-        @include border-top-radius(5px);
-        @include border-bottom-radius(5px);
-    }
-}
-
-.panel-scroll {
-    &.scrollator_lane_holder {
-        width: 5px;
-
-        &.hover, &:hover {
-            width: 5px;
-
-            .scrollator_handle_holder {
-                width: 5px;
-            }
-        }
-    }
-
-    .scrollator_lane {
-        @include border-top-radius(0);
-        @include border-bottom-radius(0);
-    }
-
-    .scrollator_handle_holder {
-        width: 5px; 
-    }
-
-    .scrollator_handle {
-        @include border-top-radius(0);
-        @include border-bottom-radius(0);
+        @include border-top-radius(4px);
+        @include border-bottom-radius(4px);
+        
+        right: 2px;
+        left: 2px;
+        
+        background-color: rgba(200, 200, 200, 0.4);
     }
 }
