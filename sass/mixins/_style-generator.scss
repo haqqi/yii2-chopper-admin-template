@@ -33,7 +33,7 @@
 				> a {
 					color: $sidebar-menu-color;
 					&:hover {
-						color: darken($sidebar-menu-color, 5%);
+						color: lighten($sidebar-menu-color, 5%);
 						background-color: lighten($sidebar-bg, 2%);
 					}
 				}

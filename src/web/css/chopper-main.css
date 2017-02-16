@@ -114,13 +114,25 @@ p + p {
   }
 }
 
-#sidebar-menu ul, #sidebar-menu li {
+#main-sidebar ul, #main-sidebar li {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-#sidebar-menu .sidebar-nav li.heading {
+#main-sidebar ul.sidebar-nav {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  #main-sidebar ul.sidebar-nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+#main-sidebar ul.sidebar-nav li.heading {
   padding: 10px 15px 4px 15px;
   margin-top: 10px;
   font-weight: 400;
@@ -132,22 +144,22 @@ p + p {
   border: none;
 }
 
-#sidebar-menu .sidebar-nav li i.fa, #sidebar-menu .sidebar-nav li i.mdi, #sidebar-menu .sidebar-nav li i.icon- {
+#main-sidebar ul.sidebar-nav li i.fa, #main-sidebar ul.sidebar-nav li i.mdi, #main-sidebar ul.sidebar-nav li i.icon- {
   font-size: 18px;
   display: inline-block;
 }
 
-#sidebar-menu .sidebar-nav li i.fa {
+#main-sidebar ul.sidebar-nav li i.fa {
   vertical-align: -8%;
 }
 
-#sidebar-menu .sidebar-nav li i.mdi {
+#main-sidebar ul.sidebar-nav li i.mdi {
   vertical-align: -3px;
   margin-right: 3px;
   margin-left: 2px;
 }
 
-#sidebar-menu .sidebar-nav li > a {
+#main-sidebar ul.sidebar-nav li > a {
   padding: 5px 30px 5px 15px;
   display: block;
   position: relative;
@@ -155,7 +167,7 @@ p + p {
   line-height: 20px;
 }
 
-#sidebar-menu .sidebar-nav li > a .label {
+#main-sidebar ul.sidebar-nav li > a .label {
   float: right;
   line-height: 14px;
   padding: 3px 8px 3px 8px;
@@ -167,55 +179,55 @@ p + p {
   border-bottom-left-radius: 10px;
 }
 
-#sidebar-menu .sidebar-nav li > a .menu-arrow {
+#main-sidebar ul.sidebar-nav li > a .menu-arrow {
   position: absolute;
   right: 7px;
   top: 6px;
   font-size: 18px;
 }
 
-#sidebar-menu .sidebar-nav li > a:hover, #sidebar-menu .sidebar-nav li > a:focus {
+#main-sidebar ul.sidebar-nav li > a:hover, #main-sidebar ul.sidebar-nav li > a:focus {
   text-decoration: none;
 }
 
-#sidebar-menu .sidebar-nav li.active > a > .menu-arrow:before {
+#main-sidebar ul.sidebar-nav li.active > a > .menu-arrow:before {
   content: "";
 }
 
-#sidebar-menu .sidebar-nav > li > a {
+#main-sidebar ul.sidebar-nav > li > a {
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-#sidebar-menu .sidebar-nav > li > a .menu-arrow {
+#main-sidebar ul.sidebar-nav > li > a .menu-arrow {
   top: 9px;
 }
 
-#sidebar-menu .sidebar-nav > li.heading + li {
+#main-sidebar ul.sidebar-nav > li.heading + li {
   border: none;
 }
 
-#sidebar-menu .sidebar-nav > li:first-child {
+#main-sidebar ul.sidebar-nav > li:first-child {
   border: none;
 }
 
-#sidebar-menu .sidebar-nav ul.sub-menu > li.first {
+#main-sidebar ul.sidebar-nav ul.sub-menu > li.first {
   margin-top: 6px;
 }
 
-#sidebar-menu .sidebar-nav ul.sub-menu > li.last {
+#main-sidebar ul.sidebar-nav ul.sub-menu > li.last {
   margin-bottom: 6px;
 }
 
-#sidebar-menu .sidebar-nav ul.sub-menu.level-2 > li > a {
+#main-sidebar ul.sidebar-nav ul.sub-menu.level-2 > li > a {
   padding-left: 42px;
 }
 
-#sidebar-menu .sidebar-nav ul.sub-menu.level-3 > li > a {
+#main-sidebar ul.sidebar-nav ul.sub-menu.level-3 > li > a {
   padding-left: 52px;
 }
 
-#sidebar-menu .sidebar-nav ul.sub-menu.level-4 > li > a, #sidebar-menu .sidebar-nav ul.sub-menu.level-5 > li > a, #sidebar-menu .sidebar-nav ul.sub-menu.level-6 > li > a {
+#main-sidebar ul.sidebar-nav ul.sub-menu.level-4 > li > a, #main-sidebar ul.sidebar-nav ul.sub-menu.level-5 > li > a, #main-sidebar ul.sidebar-nav ul.sub-menu.level-6 > li > a {
   padding-left: 62px;
 }
 

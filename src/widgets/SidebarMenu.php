@@ -63,11 +63,11 @@ class SidebarMenu extends Menu {
    */
   public function run() {
 //    echo Html::beginTag('div', ['class' => 'slimscroll']);
-    echo Html::beginTag('nav', ['id' => 'sidebar-menu']);
+//    echo Html::beginTag('nav', ['id' => 'sidebar-menu']);
 
     parent::run();
 
-    echo Html::endTag('nav');
+//    echo Html::endTag('nav');
 //    echo Html::endTag('div');
   }
 

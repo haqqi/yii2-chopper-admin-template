@@ -3,7 +3,7 @@ $(document).ready(function () {
   var screenSmMin = 768;
 
   // activate metis menu
-  $("#sidebar-menu").metisMenu();
+  $(".sidebar-nav").metisMenu();
 
   $(window).on("load resize", function () {
     var topOffset = $("#main-header").innerHeight();

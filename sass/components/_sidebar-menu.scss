@@ -1,7 +1,7 @@
 // padding for second level menu
 $secondLevelPadding: 42px;
 
-#sidebar-menu {
+#main-sidebar {
 
 	// general style of the list
 	ul, li {
@@ -10,7 +10,14 @@ $secondLevelPadding: 42px;
 		list-style-type: none;
 	}
 
-	.sidebar-nav {
+	ul.sidebar-nav {
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+		@media (min-width: $screen-sm-min) {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
 
 		// style list per menu in general
 		li {
