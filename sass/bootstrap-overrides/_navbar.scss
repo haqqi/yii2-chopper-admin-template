@@ -13,12 +13,17 @@
 .navbar-toggle {
     float: none;
     font-size: 20px;
-    padding: 0 10px;
-    line-height: $navbar-height;
+    height: 50px;
+    padding: 15px 10px;
+    line-height: 20px;
     border: 0;
     margin: 0;
     display: inline-block;
     border-radius: 0;
+    
+    .mdi {
+        top: 0px;
+    }
 
     @media (min-width: $screen-sm-min) {
         display: none;
