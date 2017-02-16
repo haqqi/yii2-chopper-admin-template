@@ -13,6 +13,11 @@ $logo-area-width-md         : 240px;
 
 $sidebar-top                : $navbar-height;
 $sidebar-width-sm           : $logo-area-width-md;
+$sidebar-menu-padding-xs    : 10px;
+$sidebar-menu-padding       : 15px;
+$sidebar-menu-padding-diff  : $sidebar-menu-padding - $sidebar-menu-padding-xs;
+$sidebar-menu-children-padding                  : 37px; // padding for children level 2
+$sidebar-menu-active-first-level-border-size    : 3px;
 
 $page-content-padding       : 20px;
 $page-content-padding-xs    : 10px;

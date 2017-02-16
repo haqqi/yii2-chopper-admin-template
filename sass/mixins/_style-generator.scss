@@ -48,6 +48,12 @@
 			> li {
 				border-top: 1px solid lighten($sidebar-bg, 3%);
 				
+				> a {
+					&.active {
+						border-left-color: $sidebar-menu-active-first-level-border-color;
+					}
+				}
+				
 				&.active {
 					> a {
 						background-color: lighten($sidebar-bg, 2%);

@@ -40,6 +40,10 @@
   border-top: 1px solid #3f4f62;
 }
 
+#main-sidebar .sidebar-nav > li > a.active {
+  border-left-color: #B93A3A;
+}
+
 #main-sidebar .sidebar-nav > li.active > a {
   background-color: #3d4d5f;
 }

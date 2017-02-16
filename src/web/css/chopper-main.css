@@ -207,6 +207,12 @@ p + p {
   top: 9px;
 }
 
+#main-sidebar ul.sidebar-nav > li > a.active {
+  padding-left: 7px;
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+
 #main-sidebar ul.sidebar-nav > li.heading + li {
   border: none;
 }
@@ -250,6 +256,9 @@ p + p {
   }
   #main-sidebar ul.sidebar-nav li > a .menu-arrow {
     right: 7px;
+  }
+  #main-sidebar ul.sidebar-nav > li > a.active {
+    padding-left: 12px;
   }
   #main-sidebar ul.sidebar-nav ul.sub-menu > li.first {
     margin-top: 6px;
