@@ -57,6 +57,13 @@
 		}
 	}
 	
+	// scroll color
+	.sidebar-scroll {
+		.scrollator_handle {
+			background-color: $sidebar-scroll-color;
+		}
+	}
+	
 	#page-wrapper {
 		background-color: $page-wrapper-bg;
 	}
