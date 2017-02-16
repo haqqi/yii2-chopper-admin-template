@@ -33,6 +33,15 @@
     }
 }
 
+#page-content {
+    padding: 15px $page-content-padding-xs;
+
+    @media (min-width: $screen-sm-min) {
+        padding-left: $page-content-padding;
+        padding-right: $page-content-padding;
+    }
+}
+
 #main-footer {
     position: relative;
     z-index: 500;

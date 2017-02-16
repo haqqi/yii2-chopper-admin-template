@@ -93,6 +93,17 @@ p + p {
   }
 }
 
+#page-content {
+  padding: 15px 10px;
+}
+
+@media (min-width: 768px) {
+  #page-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 #main-footer {
   position: relative;
   z-index: 500;
