@@ -14,15 +14,10 @@ $secondLevelPadding: 42px;
 		margin-top: 10px;
 		margin-bottom: 10px;
 
-		@media (min-width: $screen-sm-min) {
-			margin-top: 20px;
-			margin-bottom: 20px;
-		}
-
 		// style list per menu in general
 		li {
 			&.heading {
-				padding: 10px 15px 4px 15px;
+				padding: 10px 10px 4px 10px;
 				margin-top: 10px;
 				font-weight: 400;
 				font-size: 12px;
@@ -49,7 +44,7 @@ $secondLevelPadding: 42px;
 
 			> a {
 				// with right arrow
-				padding: 5px 30px 5px 15px;
+				padding: 5px 25px 5px 10px;
 				display: block;
 				position: relative;
 				font-size: 13px;
@@ -68,7 +63,7 @@ $secondLevelPadding: 42px;
 				// arrow pull right
 				.menu-arrow {
 					position: absolute;
-					right: 7px;
+					right: 2px;
 					top: 6px;
 					font-size: 18px;
 				}
@@ -119,17 +114,64 @@ $secondLevelPadding: 42px;
 
 			&.level-2 {
 				> li > a {
-					padding-left: $secondLevelPadding;
+					padding-left: $secondLevelPadding - 5px;
 				}
 			}
 			&.level-3 {
 				> li > a {
-					padding-left: $secondLevelPadding + 10px;
+					padding-left: $secondLevelPadding + 10px - 5px;
 				}
 			}
 			&.level-4, &.level-5, &.level-6 {
 				> li > a {
-					padding-left: $secondLevelPadding + 20px;
+					padding-left: $secondLevelPadding + 20px - 5px;
+				}
+			}
+		}
+
+		@media (min-width: $screen-sm-min) {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			
+			li {
+				&.heading {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+				
+				> a {
+					padding-left: 15px;
+					padding-right: 30px;
+					
+					.menu-arrow {
+						right: 7px;
+					}
+				}
+			}
+
+			// submenu definition
+			ul.sub-menu {
+				> li.first {
+					margin-top: 6px;
+				}
+				> li.last {
+					margin-bottom: 6px;
+				}
+
+				&.level-2 {
+					> li > a {
+						padding-left: $secondLevelPadding;
+					}
+				}
+				&.level-3 {
+					> li > a {
+						padding-left: $secondLevelPadding + 10px;
+					}
+				}
+				&.level-4, &.level-5, &.level-6 {
+					> li > a {
+						padding-left: $secondLevelPadding + 20px;
+					}
 				}
 			}
 		}

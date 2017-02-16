@@ -125,15 +125,8 @@ p + p {
   margin-bottom: 10px;
 }
 
-@media (min-width: 768px) {
-  #main-sidebar ul.sidebar-nav {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-}
-
 #main-sidebar ul.sidebar-nav li.heading {
-  padding: 10px 15px 4px 15px;
+  padding: 10px 10px 4px 10px;
   margin-top: 10px;
   font-weight: 400;
   font-size: 12px;
@@ -160,7 +153,7 @@ p + p {
 }
 
 #main-sidebar ul.sidebar-nav li > a {
-  padding: 5px 30px 5px 15px;
+  padding: 5px 25px 5px 10px;
   display: block;
   position: relative;
   font-size: 13px;
@@ -181,7 +174,7 @@ p + p {
 
 #main-sidebar ul.sidebar-nav li > a .menu-arrow {
   position: absolute;
-  right: 7px;
+  right: 2px;
   top: 6px;
   font-size: 18px;
 }
@@ -220,15 +213,48 @@ p + p {
 }
 
 #main-sidebar ul.sidebar-nav ul.sub-menu.level-2 > li > a {
-  padding-left: 42px;
+  padding-left: 37px;
 }
 
 #main-sidebar ul.sidebar-nav ul.sub-menu.level-3 > li > a {
-  padding-left: 52px;
+  padding-left: 47px;
 }
 
 #main-sidebar ul.sidebar-nav ul.sub-menu.level-4 > li > a, #main-sidebar ul.sidebar-nav ul.sub-menu.level-5 > li > a, #main-sidebar ul.sidebar-nav ul.sub-menu.level-6 > li > a {
-  padding-left: 62px;
+  padding-left: 57px;
+}
+
+@media (min-width: 768px) {
+  #main-sidebar ul.sidebar-nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #main-sidebar ul.sidebar-nav li.heading {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #main-sidebar ul.sidebar-nav li > a {
+    padding-left: 15px;
+    padding-right: 30px;
+  }
+  #main-sidebar ul.sidebar-nav li > a .menu-arrow {
+    right: 7px;
+  }
+  #main-sidebar ul.sidebar-nav ul.sub-menu > li.first {
+    margin-top: 6px;
+  }
+  #main-sidebar ul.sidebar-nav ul.sub-menu > li.last {
+    margin-bottom: 6px;
+  }
+  #main-sidebar ul.sidebar-nav ul.sub-menu.level-2 > li > a {
+    padding-left: 42px;
+  }
+  #main-sidebar ul.sidebar-nav ul.sub-menu.level-3 > li > a {
+    padding-left: 52px;
+  }
+  #main-sidebar ul.sidebar-nav ul.sub-menu.level-4 > li > a, #main-sidebar ul.sidebar-nav ul.sub-menu.level-5 > li > a, #main-sidebar ul.sidebar-nav ul.sub-menu.level-6 > li > a {
+    padding-left: 62px;
+  }
 }
 
 .sidebar-scroll.scrollator_lane_holder {
