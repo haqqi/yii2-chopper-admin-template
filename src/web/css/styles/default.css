@@ -56,6 +56,18 @@
   background-color: #edf1f5;
 }
 
+#page-header {
+  background-color: white;
+}
+
+#page-header .breadcrumb > .active {
+  color: #666666;
+}
+
+#page-header .breadcrumb + h1.title {
+  border-top-color: #eeeeee;
+}
+
 #main-footer {
   background-color: #435468;
   color: #7993B0;

@@ -42,6 +42,78 @@
     }
 }
 
+#page-header {
+    @include box-shadow(0px 1px 10px 0px rgba(100, 100, 100, 0.1));
+
+    .breadcrumb {
+        margin: 0;
+        padding: 5px $page-content-padding-xs 7px;
+        list-style: none;
+        background: none;
+        border-radius: 0;
+        font-size: 12px;
+
+        > li {
+            + li:before {
+                $breadcrumb-separator: "\f105";
+                $nbsp: "\00a0";
+                content: "#{$breadcrumb-separator}#{$nbsp}"; // Unicode space added since inline-block means non-collapsing white-space
+                padding: 0 5px;
+                font-size: 11px;
+                color: #777777;
+                font-family: "FontAwesome", sans-serif;
+                vertical-align: 0.67px;
+            }
+        }
+    }
+    
+    .breadcrumb + h1.title {
+        border-top: 1px solid transparent;
+    }
+
+    h1.title {
+        margin: 0;
+        padding: 10px $page-content-padding-xs;
+        font-size: 20px;
+        font-family: "Oswald", "Muli", sans-serif;
+        font-weight: 400;
+        color: #444444;
+    }
+
+    .description {
+        padding: 0 $page-content-padding-xs;
+        color: #888888;
+        font-weight: 300;
+    }
+    
+    h1.title + .description {
+        margin-top: -5px;
+        padding-bottom: 10px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+
+        .breadcrumb {
+            padding-left: $page-content-padding;
+            padding-right: $page-content-padding;
+        }
+
+        h1.title {
+            font-size: 24px;
+            padding: 15px $page-content-padding;
+        }
+        
+        .description {
+            padding: 0 $page-content-padding;
+        }
+
+        h1.title + .description {
+            margin-top: -10px;
+            padding-bottom: 15px;
+        }
+    }
+}
+
 #main-footer {
     position: relative;
     z-index: 500;

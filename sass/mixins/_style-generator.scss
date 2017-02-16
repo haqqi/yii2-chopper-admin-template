@@ -73,6 +73,19 @@
 	#page-wrapper {
 		background-color: $page-wrapper-bg;
 	}
+	
+	#page-header {
+		background-color: $page-header-background-color;
+		
+		.breadcrumb {
+			> .active {
+				color: $breadcrumb-active-color;
+			}
+		}
+		.breadcrumb + h1.title {
+			border-top-color: $page-header-border-color;
+		}
+	}
 
 	#main-footer {
 		background-color: $footer-bg;

@@ -6,6 +6,7 @@ use haqqi\chopper\Chopper;
 use haqqi\chopper\widgets\SidebarMenu;
 use yii\helpers\Html;
 use yii\helpers\Url;
+use yii\widgets\Breadcrumbs;
 
 Chopper::getComponent()->registerThemeAsset($this);
 
@@ -46,14 +47,15 @@ $this->beginPage();
                 </div>
 
                 <!-- Toggle icon for mobile view -->
-                <a id="sidebar-toggle" class="navbar-toggle" href="javascript:void(0)" data-toggle="collapse" data-target="#main-sidebar">
+                <a id="sidebar-toggle" class="navbar-toggle" href="javascript:void(0)" data-toggle="collapse"
+                   data-target="#main-sidebar">
                     <i class="mdi mdi-menu"></i>
                 </a>
-                
-                
+
+
             </nav>
         </header>
-        
+
         <div id="page-container">
             <!-- Left navbar-sidebar -->
             <aside id="main-sidebar" class="navbar-collapse collapse">
@@ -63,10 +65,41 @@ $this->beginPage();
 
             <!-- #page-wrapper -->
             <div id="page-wrapper">
-                <div id="page-content">
+                <?php
+                // setting up header
+                $pageHeader = [];
+                if (isset($this->params['pageBreadcrumb'])) {
+                    $pageHeader['breadcrumb'] = $this->params['pageBreadcrumb'];
+                }
+                if (isset($this->params['pageTitle'])) {
+                    $pageHeader['title'] = $this->params['pageTitle'];
+                }
 
+                if (count($pageHeader) > 0) {
+                    ?>
+                    <header id="page-header">
+                        <?php
+                        if (isset($pageHeader['breadcrumb'])) {
+                            echo Breadcrumbs::widget([
+                                'homeLink' => false,
+                                'links'    => $pageHeader['breadcrumb']
+                            ]);
+                        }
+
+                        if (isset($pageHeader['title'])) {
+                            echo '<h1 class="title">' . $pageHeader['title'] . '</h1>';
+
+                            if (isset($this->params['pageDescription'])) {
+                                echo '<div class="description">' . $this->params['pageDescription'] . '</div>';
+                            }
+                        }
+
+                        ?>
+                    </header>
+                <?php } ?>
+                <section id="page-content">
                     <?= $content; ?>
-                </div>
+                </section>
             </div>
             <!-- /#page-wrapper -->
         </div>
