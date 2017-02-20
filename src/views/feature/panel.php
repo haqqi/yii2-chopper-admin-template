@@ -320,7 +320,7 @@ EOT
             'type'        => Panel::TYPE_BORDER,
             'style'       => Panel::STYLE_DEFAULT,
             'icon'        => FA::icon('newspaper-o'),
-            'title'       => 'Panel Type Standard',
+            'title'       => 'Panel Type Border',
             'description' => 'With style default',
             'footer'      => 'Just do not forget the full qualified class name.'
         ]);
@@ -341,7 +341,7 @@ EOT
             'type'        => Panel::TYPE_BORDER,
             'style'       => Panel::STYLE_PRIMARY,
             'icon'        => FA::icon('newspaper-o'),
-            'title'       => 'Panel Type Standard',
+            'title'       => 'Panel Type Border',
             'description' => 'With style primary',
             'footer'      => 'Just do not forget the full qualified class name.'
         ]);
@@ -362,7 +362,7 @@ EOT
             'type'        => Panel::TYPE_BORDER,
             'style'       => Panel::STYLE_SUCCESS,
             'icon'        => FA::icon('newspaper-o'),
-            'title'       => 'Panel Type Standard',
+            'title'       => 'Panel Type Border',
             'description' => 'With style success',
             'footer'      => 'Just do not forget the full qualified class name.'
         ]);
@@ -383,7 +383,7 @@ EOT
             'type'        => Panel::TYPE_BORDER,
             'style'       => Panel::STYLE_INFO,
             'icon'        => FA::icon('newspaper-o'),
-            'title'       => 'Panel Type Standard',
+            'title'       => 'Panel Type Border',
             'description' => 'With style info',
             'footer'      => 'Just do not forget the full qualified class name.'
         ]);
@@ -404,7 +404,7 @@ EOT
             'type'        => Panel::TYPE_BORDER,
             'style'       => Panel::STYLE_WARNING,
             'icon'        => FA::icon('newspaper-o'),
-            'title'       => 'Panel Type Standard',
+            'title'       => 'Panel Type Border',
             'description' => 'With style warning',
             'footer'      => 'Just do not forget the full qualified class name.'
         ]);
@@ -425,7 +425,7 @@ EOT
             'type'        => Panel::TYPE_BORDER,
             'style'       => Panel::STYLE_DANGER,
             'icon'        => FA::icon('newspaper-o'),
-            'title'       => 'Panel Type Standard',
+            'title'       => 'Panel Type Border',
             'description' => 'With style danger',
             'footer'      => 'Just do not forget the full qualified class name.'
         ]);
