@@ -7,8 +7,8 @@ use yii\helpers\Html;
 
 class Panel extends Widget
 {
-    const TYPE_STANDARD = 'standard';
     const TYPE_CLEAN    = 'clean';
+    const TYPE_BORDER   = 'border';
     const TYPE_BOXED    = 'boxed';
 
     const STYLE_DEFAULT = 'default';
