@@ -25,6 +25,12 @@
             border-color: $panel-default-border;
         }
     }
+    
+    &.panel-type-boxed {
+        > .panel-heading {
+            background-color: $title-color;
+        }
+    }
 }
 
 // override panel
@@ -130,7 +136,27 @@
 }
 
 .panel-type-boxed {
+    > .panel-heading {
+        padding: 10px $panel-inner-padding;
+        border-bottom: none;
+    }
+
+    .panel-title {
+        color: #fff;
+        .description {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
     
+    > .panel-body {
+        padding: 15px 0;
+        margin: 0 $panel-inner-padding;
+    }
+
+    > .panel-footer {
+        padding: 10px 0;
+        margin: 0 $panel-inner-padding;
+    }
 }
 
 .panel-default {

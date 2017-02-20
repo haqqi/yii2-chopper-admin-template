@@ -162,6 +162,29 @@ Yii2 Chopper Template Admin - Main SCSS File
   margin: 0 15px;
 }
 
+.panel-type-boxed > .panel-heading {
+  padding: 10px 15px;
+  border-bottom: none;
+}
+
+.panel-type-boxed .panel-title {
+  color: #fff;
+}
+
+.panel-type-boxed .panel-title .description {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.panel-type-boxed > .panel-body {
+  padding: 15px 0;
+  margin: 0 15px;
+}
+
+.panel-type-boxed > .panel-footer {
+  padding: 10px 0;
+  margin: 0 15px;
+}
+
 .panel-default.panel-type-clean > .panel-heading {
   border-color: #ddd;
 }
@@ -184,6 +207,10 @@ Yii2 Chopper Template Admin - Main SCSS File
 
 .panel-default.panel-type-border > .panel-footer {
   border-color: #ddd;
+}
+
+.panel-default.panel-type-boxed > .panel-heading {
+  background-color: #555555;
 }
 
 .panel-primary.panel-type-clean > .panel-heading {
@@ -210,6 +237,10 @@ Yii2 Chopper Template Admin - Main SCSS File
   border-color: #ddd;
 }
 
+.panel-primary.panel-type-boxed > .panel-heading {
+  background-color: #337ab7;
+}
+
 .panel-success.panel-type-clean > .panel-heading {
   border-color: #c7e6c7;
 }
@@ -232,6 +263,10 @@ Yii2 Chopper Template Admin - Main SCSS File
 
 .panel-success.panel-type-border > .panel-footer {
   border-color: #ddd;
+}
+
+.panel-success.panel-type-boxed > .panel-heading {
+  background-color: #5cb85c;
 }
 
 .panel-info.panel-type-clean > .panel-heading {
@@ -258,6 +293,10 @@ Yii2 Chopper Template Admin - Main SCSS File
   border-color: #ddd;
 }
 
+.panel-info.panel-type-boxed > .panel-heading {
+  background-color: #5bc0de;
+}
+
 .panel-warning.panel-type-clean > .panel-heading {
   border-color: #fceedb;
 }
@@ -282,6 +321,10 @@ Yii2 Chopper Template Admin - Main SCSS File
   border-color: #ddd;
 }
 
+.panel-warning.panel-type-boxed > .panel-heading {
+  background-color: #f0ad4e;
+}
+
 .panel-danger.panel-type-clean > .panel-heading {
   border-color: #f4cecd;
 }
@@ -304,6 +347,10 @@ Yii2 Chopper Template Admin - Main SCSS File
 
 .panel-danger.panel-type-border > .panel-footer {
   border-color: #ddd;
+}
+
+.panel-danger.panel-type-boxed > .panel-heading {
+  background-color: #d9534f;
 }
 
 * {
