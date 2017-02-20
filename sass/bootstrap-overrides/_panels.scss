@@ -22,10 +22,6 @@
     @include border-bottom-radius(0);
     border: none;
     
-    &:last-child {
-        margin-bottom: 0;
-    }
-    
     > .panel-heading {
         background-color: transparent;
         @include border-top-radius(0);
@@ -52,8 +48,10 @@
     }
     
     > .panel-body {
-        p:last-child {
-            margin: 0;
+        p, ul, li, pre {
+            &:last-child {
+                margin: 0;
+            }
         }
     }
     

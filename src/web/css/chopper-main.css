@@ -44,10 +44,6 @@ Yii2 Chopper Template Admin - Main SCSS File
   border: none;
 }
 
-.panel:last-child {
-  margin-bottom: 0;
-}
-
 .panel > .panel-heading {
   background-color: transparent;
   border-top-right-radius: 0;
@@ -80,7 +76,7 @@ Yii2 Chopper Template Admin - Main SCSS File
   color: #607d8b;
 }
 
-.panel > .panel-body p:last-child {
+.panel > .panel-body p:last-child, .panel > .panel-body ul:last-child, .panel > .panel-body li:last-child, .panel > .panel-body pre:last-child {
   margin: 0;
 }
 
@@ -125,7 +121,7 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-default.panel-type-clean > .panel-heading {
-  border-color: #a2a2a2;
+  border-color: #bbbbbb;
 }
 
 .panel-default.panel-type-clean .panel-title h3 {
@@ -133,7 +129,7 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-default.panel-type-clean > .panel-footer {
-  border-color: #a2a2a2;
+  border-color: #bbbbbb;
 }
 
 .panel-primary.panel-type-clean > .panel-heading {
