@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
   var screenSmMin = 768;
+  var lastWindowWidth = $(window).width();
 
   // activate metis menu
   $(".sidebar-nav").metisMenu();
@@ -8,26 +9,33 @@ $(document).ready(function () {
   $(window).on("load resize", function () {
     var topOffset = $("#main-header").innerHeight();
     var bottomOffset = $("#main-footer").innerHeight();
-    var windowWidth = getScreenOrWindowWidth();
-    var windowHeight = $(window).innerHeight();
-
-    if (windowWidth < screenSmMin) {
-      $('#main-sidebar').addClass('collapse');
-      // topOffset = 100; // 2-row-menu
-    } else {
-      $('#main-sidebar').removeClass('collapse').css("height", "100%");
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
+    
+    // shrink
+    if(windowWidth < lastWindowWidth) {
+      if (windowWidth < screenSmMin) {
+        $('#main-sidebar').addClass('collapse');
+        $("#main-sidebar").scrollator('hide'); // @note: there is a bug in scrollator if not hidden after resizing. The html content might be taller.
+      }
+    } else { // expand
+      if (windowWidth >= screenSmMin) {
+        $('#main-sidebar').removeClass('collapse').css("height", "100%");
+        $("#main-sidebar").scrollator('show');
+      }
     }
-
+    
     if (windowHeight > (topOffset + bottomOffset)) {
-      var pageHeight = $(window).height() - topOffset - bottomOffset;
+      var pageHeight = windowHeight - topOffset - bottomOffset;
       $("#page-wrapper").css("min-height", (pageHeight) + "px");
     }
+    
+    lastWindowWidth = windowWidth;
   });
 
   // navbar toggle change
   $("#main-sidebar").on("hidden.bs.collapse", function (e) {
     $("#sidebar-toggle i").addClass("mdi-menu").removeClass("mdi-close");
-
   });
 
   $("#main-sidebar").on("shown.bs.collapse", function (e) {
@@ -37,8 +45,4 @@ $(document).ready(function () {
   $("#main-sidebar").scrollator({
     customClass: 'sidebar-scroll'
   });
-
-  function getScreenOrWindowWidth() {
-    return (window.innerWidth > 0) ? window.innerWidth : screen.width;
-  }
 });
