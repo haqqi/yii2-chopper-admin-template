@@ -7,7 +7,8 @@ use yii\helpers\Html;
 ?>
 
 <div class="row">
-    <div class="col-sm-6">
+    <div class="col-xs-12">
+
         <?php
         Panel::begin([
             'style'       => Panel::STYLE_DEFAULT,
@@ -64,17 +65,17 @@ use yii\helpers\Html;
         ?>
 
         <p>So, the source code of this panel might looks like below:</p>
-        
+
         <pre><?php
             echo Html::encode(<<<EOT
 <?php
 Panel::begin([
-    'type'        => Panel::TYPE_CLEAN,
-    'style'       => Panel::STYLE_PRIMARY,
-    'icon'        => FA::icon('briefcase'),
-    'title'       => 'Panel Type Clean',
-    'description' => 'With style primary',
-    'footer'      => 'Just do not forget the full qualified class name.'
+'type'        => Panel::TYPE_CLEAN,
+'style'       => Panel::STYLE_PRIMARY,
+'icon'        => FA::icon('briefcase'),
+'title'       => 'Panel Type Clean',
+'description' => 'With style primary',
+'footer'      => 'Just do not forget the full qualified class name.'
 ]);
 ?>
 
@@ -84,15 +85,15 @@ Panel::begin([
 Panel::end();
 ?>
 EOT
-);
+            );
             ?>
-        </pre>
-        
+    </pre>
+
         <?php
         // end second panel
         Panel::end();
         ?>
-        
+
         <?php
         // begin third panel
         Panel::begin([
@@ -105,13 +106,15 @@ EOT
         ]);
         ?>
 
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
 
         <?php
         // end third panel
         Panel::end();
         ?>
-        
+
         <?php
         // begin #4 panel
         Panel::begin([
@@ -124,7 +127,9 @@ EOT
         ]);
         ?>
 
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
 
         <?php
         // end #4 panel
@@ -143,7 +148,9 @@ EOT
         ]);
         ?>
 
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
 
         <?php
         // end #5 panel
@@ -162,7 +169,139 @@ EOT
         ]);
         ?>
 
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+
+        <?php
+        // end #6 panel
+        Panel::end();
+        ?>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6">
+        <?php
+        // begin #1 panel
+        Panel::begin([
+            'type'        => Panel::TYPE_BOXED,
+            'style'       => Panel::STYLE_DEFAULT,
+            'icon'        => FA::icon('newspaper-o'),
+            'title'       => 'Panel Type Boxed',
+            'description' => 'With style default',
+            'footer'      => 'Just do not forget the full qualified class name.'
+        ]);
+        ?>
+
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+
+        <?php
+        // end #1 panel
+        Panel::end();
+        ?>
+
+        <?php
+        // begin #2 panel
+        Panel::begin([
+            'type'        => Panel::TYPE_BOXED,
+            'style'       => Panel::STYLE_PRIMARY,
+            'icon'        => FA::icon('newspaper-o'),
+            'title'       => 'Panel Type Boxed',
+            'description' => 'With style primary',
+            'footer'      => 'Just do not forget the full qualified class name.'
+        ]);
+        ?>
+
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+
+        <?php
+        // end #2 panel
+        Panel::end();
+        ?>
+
+        <?php
+        // begin #1 panel
+        Panel::begin([
+            'type'        => Panel::TYPE_BOXED,
+            'style'       => Panel::STYLE_SUCCESS,
+            'icon'        => FA::icon('newspaper-o'),
+            'title'       => 'Panel Type Boxed',
+            'description' => 'With style success',
+            'footer'      => 'Just do not forget the full qualified class name.'
+        ]);
+        ?>
+
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+
+        <?php
+        // end #3 panel
+        Panel::end();
+        ?>
+
+        <?php
+        // begin #4 panel
+        Panel::begin([
+            'type'        => Panel::TYPE_BOXED,
+            'style'       => Panel::STYLE_INFO,
+            'icon'        => FA::icon('newspaper-o'),
+            'title'       => 'Panel Type Boxed',
+            'description' => 'With style info',
+            'footer'      => 'Just do not forget the full qualified class name.'
+        ]);
+        ?>
+
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+
+        <?php
+        // end #4 panel
+        Panel::end();
+        ?>
+
+        <?php
+        // begin #5 panel
+        Panel::begin([
+            'type'        => Panel::TYPE_BOXED,
+            'style'       => Panel::STYLE_WARNING,
+            'icon'        => FA::icon('newspaper-o'),
+            'title'       => 'Panel Type Boxed',
+            'description' => 'With style warning',
+            'footer'      => 'Just do not forget the full qualified class name.'
+        ]);
+        ?>
+
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+
+        <?php
+        // end #5 panel
+        Panel::end();
+        ?>
+
+        <?php
+        // begin #6 panel
+        Panel::begin([
+            'type'        => Panel::TYPE_BOXED,
+            'style'       => Panel::STYLE_DANGER,
+            'icon'        => FA::icon('newspaper-o'),
+            'title'       => 'Panel Type Boxed',
+            'description' => 'With style danger',
+            'footer'      => 'Just do not forget the full qualified class name.'
+        ]);
+        ?>
+
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
 
         <?php
         // end #6 panel
@@ -183,7 +322,9 @@ EOT
         ]);
         ?>
 
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
 
         <?php
         // end #1 panel
@@ -202,7 +343,9 @@ EOT
         ]);
         ?>
 
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
 
         <?php
         // end #2 panel
@@ -221,7 +364,9 @@ EOT
         ]);
         ?>
 
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
 
         <?php
         // end #3 panel
@@ -240,7 +385,9 @@ EOT
         ]);
         ?>
 
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
 
         <?php
         // end #4 panel
@@ -259,7 +406,9 @@ EOT
         ]);
         ?>
 
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
 
         <?php
         // end #5 panel
@@ -278,125 +427,9 @@ EOT
         ]);
         ?>
 
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-
-        <?php
-        // end #6 panel
-        Panel::end();
-        ?>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-12">
-        <?php
-        // begin #1 panel
-        Panel::begin([
-            'type'        => Panel::TYPE_BOXED,
-            'style'       => Panel::STYLE_DEFAULT,
-            'icon'        => FA::icon('newspaper-o'),
-            'title'       => 'Panel Type Boxed',
-            'description' => 'With style default',
-            'footer'      => 'Just do not forget the full qualified class name.'
-        ]);
-        ?>
-
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-
-        <?php
-        // end #1 panel
-        Panel::end();
-        ?>
-
-        <?php
-        // begin #2 panel
-        Panel::begin([
-            'type'        => Panel::TYPE_BOXED,
-            'style'       => Panel::STYLE_PRIMARY,
-            'icon'        => FA::icon('newspaper-o'),
-            'title'       => 'Panel Type Boxed',
-            'description' => 'With style primary',
-            'footer'      => 'Just do not forget the full qualified class name.'
-        ]);
-        ?>
-
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-
-        <?php
-        // end #2 panel
-        Panel::end();
-        ?>
-
-        <?php
-        // begin #1 panel
-        Panel::begin([
-            'type'        => Panel::TYPE_BOXED,
-            'style'       => Panel::STYLE_SUCCESS,
-            'icon'        => FA::icon('newspaper-o'),
-            'title'       => 'Panel Type Boxed',
-            'description' => 'With style success',
-            'footer'      => 'Just do not forget the full qualified class name.'
-        ]);
-        ?>
-
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-
-        <?php
-        // end #3 panel
-        Panel::end();
-        ?>
-
-        <?php
-        // begin #4 panel
-        Panel::begin([
-            'type'        => Panel::TYPE_BOXED,
-            'style'       => Panel::STYLE_INFO,
-            'icon'        => FA::icon('newspaper-o'),
-            'title'       => 'Panel Type Boxed',
-            'description' => 'With style info',
-            'footer'      => 'Just do not forget the full qualified class name.'
-        ]);
-        ?>
-
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-
-        <?php
-        // end #4 panel
-        Panel::end();
-        ?>
-
-        <?php
-        // begin #5 panel
-        Panel::begin([
-            'type'        => Panel::TYPE_BOXED,
-            'style'       => Panel::STYLE_WARNING,
-            'icon'        => FA::icon('newspaper-o'),
-            'title'       => 'Panel Type Boxed',
-            'description' => 'With style warning',
-            'footer'      => 'Just do not forget the full qualified class name.'
-        ]);
-        ?>
-
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-
-        <?php
-        // end #5 panel
-        Panel::end();
-        ?>
-
-        <?php
-        // begin #6 panel
-        Panel::begin([
-            'type'        => Panel::TYPE_BOXED,
-            'style'       => Panel::STYLE_DANGER,
-            'icon'        => FA::icon('newspaper-o'),
-            'title'       => 'Panel Type Boxed',
-            'description' => 'With style danger',
-            'footer'      => 'Just do not forget the full qualified class name.'
-        ]);
-        ?>
-
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
 
         <?php
         // end #6 panel
