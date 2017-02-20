@@ -44,6 +44,10 @@ Yii2 Chopper Template Admin - Main SCSS File
   border: none;
 }
 
+.panel:last-child {
+  margin-bottom: 0;
+}
+
 .panel > .panel-heading {
   background-color: transparent;
   border-top-right-radius: 0;
@@ -76,6 +80,10 @@ Yii2 Chopper Template Admin - Main SCSS File
   color: #607d8b;
 }
 
+.panel > .panel-body p:last-child {
+  margin: 0;
+}
+
 .panel > .panel-footer {
   background-color: transparent;
   border-bottom-right-radius: 0;
@@ -96,26 +104,113 @@ Yii2 Chopper Template Admin - Main SCSS File
   }
 }
 
+.panel-type-boxed {
+  border-top-width: 3px;
+  border-top-style: solid;
+}
+
+.panel-type-clean > .panel-heading {
+  padding: 10px 0;
+  margin: 0 15px;
+}
+
+.panel-type-clean > .panel-body {
+  padding: 15px 0;
+  margin: 0 15px;
+}
+
+.panel-type-clean > .panel-footer {
+  padding: 10px 0;
+  margin: 0 15px;
+}
+
+.panel-default.panel-type-clean > .panel-heading {
+  border-color: #a2a2a2;
+}
+
+.panel-default.panel-type-clean .panel-title h3 {
+  color: #555555;
+}
+
+.panel-default.panel-type-clean > .panel-footer {
+  border-color: #a2a2a2;
+}
+
+.panel-primary.panel-type-clean > .panel-heading {
+  border-color: #a0c4e4;
+}
+
+.panel-primary.panel-type-clean .panel-title h3 {
+  color: #337ab7;
+}
+
+.panel-primary.panel-type-clean > .panel-footer {
+  border-color: #a0c4e4;
+}
+
+.panel-success.panel-type-clean > .panel-heading {
+  border-color: #c7e6c7;
+}
+
+.panel-success.panel-type-clean .panel-title h3 {
+  color: #5cb85c;
+}
+
+.panel-success.panel-type-clean > .panel-footer {
+  border-color: #c7e6c7;
+}
+
+.panel-info.panel-type-clean > .panel-heading {
+  border-color: #daf1f8;
+}
+
+.panel-info.panel-type-clean .panel-title h3 {
+  color: #5bc0de;
+}
+
+.panel-info.panel-type-clean > .panel-footer {
+  border-color: #daf1f8;
+}
+
+.panel-warning.panel-type-clean > .panel-heading {
+  border-color: #fceedb;
+}
+
+.panel-warning.panel-type-clean .panel-title h3 {
+  color: #f0ad4e;
+}
+
+.panel-warning.panel-type-clean > .panel-footer {
+  border-color: #fceedb;
+}
+
+.panel-danger.panel-type-clean > .panel-heading {
+  border-color: #f4cecd;
+}
+
+.panel-danger.panel-type-clean .panel-title h3 {
+  color: #d9534f;
+}
+
+.panel-danger.panel-type-clean > .panel-footer {
+  border-color: #f4cecd;
+}
+
 * {
   outline: none !important;
 }
 
 body {
   font-family: "Muli", sans-serif;
-  font-size: 13px;
-  color: #333333;
+  color: #555555;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", sans-serif;
 }
 
-p {
-  margin: 0;
-}
-
-p + p {
-  margin-top: 10px;
+code {
+  font-size: 100%;
 }
 
 #wrapper {

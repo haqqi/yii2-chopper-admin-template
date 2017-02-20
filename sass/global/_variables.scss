@@ -2,7 +2,7 @@
 $grid-gutter-width          : 20px;
 
 $font-family-base           : 'Muli', sans-serif;
-$font-color-base            : #333333;
+$font-color-base            : #555555;
 $font-family-heading        : 'Roboto Slab', sans-serif;
 
 $navbar-margin-bottom       : 0;
@@ -22,4 +22,19 @@ $sidebar-menu-active-first-level-border-size    : 3px;
 $page-content-padding       : 20px;
 $page-content-padding-xs    : 10px;
 
+$panel-inner-padding        : 15px;
+
 $footer-height              : 40px;
+
+$panel-default-title         : #555555;
+$panel-default-border        : lighten($panel-default-title, 30%);
+$panel-success-title         : $brand-success;
+$panel-success-border        : lighten($panel-success-title, 30%);
+$panel-primary-title         : $brand-primary;
+$panel-primary-border        : lighten($panel-primary-title, 30%);
+$panel-info-title            : $brand-info;
+$panel-info-border           : lighten($panel-info-title, 30%);
+$panel-warning-title         : $brand-warning;
+$panel-warning-border        : lighten($panel-warning-title, 30%);
+$panel-danger-title          : $brand-danger;
+$panel-danger-border         : lighten($panel-danger-title, 30%);
