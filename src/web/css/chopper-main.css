@@ -36,6 +36,66 @@ Yii2 Chopper Template Admin - Main SCSS File
   }
 }
 
+.panel {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border: none;
+}
+
+.panel > .panel-heading {
+  background-color: transparent;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.panel > .panel-heading:before, .panel > .panel-heading:after {
+  content: " ";
+  display: table;
+}
+
+.panel > .panel-heading:after {
+  clear: both;
+}
+
+.panel .panel-title h3 {
+  font-size: 18px;
+  line-height: 24px;
+  display: block;
+  margin: 0;
+  font-weight: 400;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.panel .panel-title .description {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  font-weight: 300;
+  color: #607d8b;
+}
+
+.panel > .panel-footer {
+  background-color: transparent;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+@media (min-width: 992px) {
+  .panel .panel-title {
+    display: block;
+    float: left;
+  }
+  .panel .panel-title h3 {
+    display: inline;
+  }
+  .panel .panel-title .description {
+    display: inline;
+    margin-left: 10px;
+  }
+}
+
 * {
   outline: none !important;
 }

@@ -7,8 +7,22 @@ use yii\helpers\Html;
 
 class Panel extends Widget
 {
+    const TYPE_STANDARD = 'standard';
+    const TYPE_CLEAN    = 'clean';
+    const TYPE_BOXED    = 'boxed';
+
+    const STYLE_DEFAULT = 'default';
+    const STYLE_PRIMARY = 'primary';
+    const STYLE_DANGER  = 'danger';
+    const STYLE_INFO    = 'info';
+    const STYLE_WARNING = 'warning';
+    const STYLE_SUCCESS = 'success';
+
+    /** @var string Type of panel. The options are standard|clean|boxed */
+    public $type = Panel::TYPE_CLEAN;
+
     /** @var string $style Panel style. You can choose from default|primary|danger|info|warning|success */
-    public $style = 'default';
+    public $style = Panel::STYLE_DEFAULT;
 
     /** @var string $color Color style that override the style. If it is empty string, it will not be rendered. */
     public $color = '';
@@ -33,7 +47,11 @@ class Panel extends Widget
         parent::init();
 
         // open panel tag
-        echo Html::beginTag('section', ['class' => 'panel panel-' . $this->style]);
+        echo Html::beginTag('section', ['class' => [
+            'panel',
+            'panel-' . $this->style,
+            'panel-type-' . $this->type
+        ]]);
 
         $this->_renderHeader();
 
