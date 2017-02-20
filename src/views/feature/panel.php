@@ -7,8 +7,7 @@ use yii\helpers\Html;
 ?>
 
 <div class="row">
-    <div class="col-xs-12">
-
+    <div class="col-sm-6">
         <?php
         Panel::begin([
             'style'       => Panel::STYLE_DEFAULT,
@@ -51,7 +50,8 @@ use yii\helpers\Html;
         // close first panel
         Panel::end();
         ?>
-
+    </div>
+    <div class="col-sm-6">
         <?php
         // begin second panel
         Panel::begin([
@@ -93,7 +93,11 @@ EOT
         // end second panel
         Panel::end();
         ?>
+    </div>
+</div>
 
+<div class="row">
+    <div class="col-xs-12">
         <?php
         // begin third panel
         Panel::begin([
