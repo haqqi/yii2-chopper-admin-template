@@ -49,7 +49,9 @@ use yii\helpers\Html;
         <?php
         // close first panel
         Panel::end();
+        ?>
 
+        <?php
         // begin second panel
         Panel::begin([
             'type'        => Panel::TYPE_CLEAN,
@@ -89,7 +91,9 @@ EOT
         <?php
         // end second panel
         Panel::end();
-
+        ?>
+        
+        <?php
         // begin third panel
         Panel::begin([
             'type'        => Panel::TYPE_CLEAN,
