@@ -10,6 +10,7 @@
     "gulp-autoprefixer": "3.*",
     "gulp-debug": "2.*",
     "gulp-plumber": "1.*",
+    "gulp-sourcemaps": "2.*",
     "gulp-sass": "2.*",
     "npm-run-all": "2.*"
   }

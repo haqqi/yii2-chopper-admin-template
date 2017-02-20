@@ -3,6 +3,7 @@ const gulp      = require('gulp'),
   plumber       = require('gulp-plumber'),
   debug         = require('gulp-debug'),
   sass          = require('gulp-sass'),
+  sourceMaps    = require('gulp-sourcemaps'),
   autoPrefixer  = require('gulp-autoprefixer');
 
 // sass source map
@@ -21,6 +22,7 @@ function processSass(src, dest) {
     .pipe(debug({
       title: 'Compiling SASS file(s):'
     }))
+    .pipe(sourceMaps.init())
     .pipe(sass({
       // less configuration here
       outputStyle: 'expanded',
@@ -33,6 +35,7 @@ function processSass(src, dest) {
         , 'Firefox ESR'
       ]
     }))
+    .pipe(sourceMaps.write('./maps'))
     .pipe(gulp.dest(dest));
 }
 
