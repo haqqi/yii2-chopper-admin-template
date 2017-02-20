@@ -13,8 +13,7 @@ use yii\helpers\Html;
             'style'       => Panel::STYLE_DEFAULT,
             'icon'        => FA::icon('clock-o'),
             'title'       => 'How to Use',
-            'description' => 'Simple tutorial of using panels',
-            'footer'      => 'Other panel type and style is shown in this page.'
+            'description' => 'Simple tutorial of using panels'
         ]);
         ?>
 
@@ -70,12 +69,12 @@ use yii\helpers\Html;
             echo Html::encode(<<<EOT
 <?php
 Panel::begin([
-'type'        => Panel::TYPE_CLEAN,
-'style'       => Panel::STYLE_PRIMARY,
-'icon'        => FA::icon('briefcase'),
-'title'       => 'Panel Type Clean',
-'description' => 'With style primary',
-'footer'      => 'Just do not forget the full qualified class name.'
+    'type'        => Panel::TYPE_CLEAN,
+    'style'       => Panel::STYLE_PRIMARY,
+    'icon'        => FA::icon('briefcase'),
+    'title'       => 'Panel Type Clean',
+    'description' => 'With style primary',
+    'footer'      => 'Just do not forget the full qualified class name.'
 ]);
 ?>
 
