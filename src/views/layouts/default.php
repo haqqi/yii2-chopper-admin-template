@@ -42,15 +42,20 @@ $this->beginPage();
         <header id="main-header">
             <nav class="navbar navbar-static-top">
                 <div class="container-fluid">
-                    <div class="navbar-header">
+                    <div id="logo-area"></div>
+
+                    <div class="left-menu">
+                        <!-- Toggle icon for mobile view -->
+                        <a id="sidebar-toggle" class="navbar-toggle" href="javascript:void(0)" data-toggle="collapse"
+                           data-target="#main-sidebar">
+                            <i class="mdi mdi-menu"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="right-menu">
+                        
                     </div>
                 </div>
-
-                <!-- Toggle icon for mobile view -->
-                <a id="sidebar-toggle" class="navbar-toggle" href="javascript:void(0)" data-toggle="collapse"
-                   data-target="#main-sidebar">
-                    <i class="mdi mdi-menu"></i>
-                </a>
 
 
             </nav>

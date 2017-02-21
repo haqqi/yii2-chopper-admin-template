@@ -1,3 +1,6 @@
+.container-fluid, .container {
+  @include container-fixed;
+}
 
 .row {
   @include make-row;

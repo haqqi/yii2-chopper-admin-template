@@ -1,0 +1,12 @@
+#main-header {
+    .container-fluid {
+        
+    }
+
+    @media (min-width: $grid-float-breakpoint) {
+        .container-fluid {
+            padding-left: $sidebar-menu-padding;
+            padding-right: $page-content-padding;
+        }
+    }
+}

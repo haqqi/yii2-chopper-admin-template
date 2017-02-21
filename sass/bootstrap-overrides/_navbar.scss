@@ -1,7 +1,7 @@
 .navbar {
     margin-bottom: 0;
     border: 0;
-    height: $navbar-height;
+    //height: $navbar-height;
 }
 
 .navbar-collapse {
@@ -14,7 +14,7 @@
     float: none;
     font-size: 20px;
     height: 50px;
-    padding: 15px 10px;
+    padding: 15px $sidebar-menu-padding-xs;
     line-height: 20px;
     border: 0;
     margin: 0;

@@ -2,6 +2,22 @@
 /**
 Yii2 Chopper Template Admin - Main SCSS File
  */
+.container-fluid, .container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container-fluid:before, .container-fluid:after, .container:before, .container:after {
+  content: " ";
+  display: table;
+}
+
+.container-fluid:after, .container:after {
+  clear: both;
+}
+
 .row {
   margin-left: -10px;
   margin-right: -10px;
@@ -26,7 +42,6 @@ Yii2 Chopper Template Admin - Main SCSS File
 .navbar {
   margin-bottom: 0;
   border: 0;
-  height: 50px;
 }
 
 .navbar-collapse {
@@ -186,7 +201,7 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-default.panel-type-clean > .panel-heading {
-  border-color: #ddd;
+  border-color: rgba(85, 85, 85, 0.2);
 }
 
 .panel-default.panel-type-clean .panel-title h3 {
@@ -194,7 +209,7 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-default.panel-type-clean > .panel-footer {
-  border-color: #ddd;
+  border-color: rgba(85, 85, 85, 0.2);
 }
 
 .panel-default.panel-type-border {
@@ -202,11 +217,11 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-default.panel-type-border > .panel-heading {
-  border-color: #ddd;
+  border-color: rgba(85, 85, 85, 0.2);
 }
 
 .panel-default.panel-type-border > .panel-footer {
-  border-color: #ddd;
+  border-color: rgba(85, 85, 85, 0.2);
 }
 
 .panel-default.panel-type-boxed > .panel-heading {
@@ -214,7 +229,7 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-primary.panel-type-clean > .panel-heading {
-  border-color: #a0c4e4;
+  border-color: rgba(51, 122, 183, 0.2);
 }
 
 .panel-primary.panel-type-clean .panel-title h3 {
@@ -222,7 +237,7 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-primary.panel-type-clean > .panel-footer {
-  border-color: #a0c4e4;
+  border-color: rgba(51, 122, 183, 0.2);
 }
 
 .panel-primary.panel-type-border {
@@ -230,11 +245,11 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-primary.panel-type-border > .panel-heading {
-  border-color: #ddd;
+  border-color: rgba(85, 85, 85, 0.2);
 }
 
 .panel-primary.panel-type-border > .panel-footer {
-  border-color: #ddd;
+  border-color: rgba(85, 85, 85, 0.2);
 }
 
 .panel-primary.panel-type-boxed > .panel-heading {
@@ -242,7 +257,7 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-success.panel-type-clean > .panel-heading {
-  border-color: #c7e6c7;
+  border-color: rgba(92, 184, 92, 0.2);
 }
 
 .panel-success.panel-type-clean .panel-title h3 {
@@ -250,7 +265,7 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-success.panel-type-clean > .panel-footer {
-  border-color: #c7e6c7;
+  border-color: rgba(92, 184, 92, 0.2);
 }
 
 .panel-success.panel-type-border {
@@ -258,11 +273,11 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-success.panel-type-border > .panel-heading {
-  border-color: #ddd;
+  border-color: rgba(85, 85, 85, 0.2);
 }
 
 .panel-success.panel-type-border > .panel-footer {
-  border-color: #ddd;
+  border-color: rgba(85, 85, 85, 0.2);
 }
 
 .panel-success.panel-type-boxed > .panel-heading {
@@ -270,7 +285,7 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-info.panel-type-clean > .panel-heading {
-  border-color: #daf1f8;
+  border-color: rgba(91, 192, 222, 0.2);
 }
 
 .panel-info.panel-type-clean .panel-title h3 {
@@ -278,7 +293,7 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-info.panel-type-clean > .panel-footer {
-  border-color: #daf1f8;
+  border-color: rgba(91, 192, 222, 0.2);
 }
 
 .panel-info.panel-type-border {
@@ -286,11 +301,11 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-info.panel-type-border > .panel-heading {
-  border-color: #ddd;
+  border-color: rgba(85, 85, 85, 0.2);
 }
 
 .panel-info.panel-type-border > .panel-footer {
-  border-color: #ddd;
+  border-color: rgba(85, 85, 85, 0.2);
 }
 
 .panel-info.panel-type-boxed > .panel-heading {
@@ -298,7 +313,7 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-warning.panel-type-clean > .panel-heading {
-  border-color: #fceedb;
+  border-color: rgba(240, 173, 78, 0.2);
 }
 
 .panel-warning.panel-type-clean .panel-title h3 {
@@ -306,7 +321,7 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-warning.panel-type-clean > .panel-footer {
-  border-color: #fceedb;
+  border-color: rgba(240, 173, 78, 0.2);
 }
 
 .panel-warning.panel-type-border {
@@ -314,11 +329,11 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-warning.panel-type-border > .panel-heading {
-  border-color: #ddd;
+  border-color: rgba(85, 85, 85, 0.2);
 }
 
 .panel-warning.panel-type-border > .panel-footer {
-  border-color: #ddd;
+  border-color: rgba(85, 85, 85, 0.2);
 }
 
 .panel-warning.panel-type-boxed > .panel-heading {
@@ -326,7 +341,7 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-danger.panel-type-clean > .panel-heading {
-  border-color: #f4cecd;
+  border-color: rgba(217, 83, 79, 0.2);
 }
 
 .panel-danger.panel-type-clean .panel-title h3 {
@@ -334,7 +349,7 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-danger.panel-type-clean > .panel-footer {
-  border-color: #f4cecd;
+  border-color: rgba(217, 83, 79, 0.2);
 }
 
 .panel-danger.panel-type-border {
@@ -342,11 +357,11 @@ Yii2 Chopper Template Admin - Main SCSS File
 }
 
 .panel-danger.panel-type-border > .panel-heading {
-  border-color: #ddd;
+  border-color: rgba(85, 85, 85, 0.2);
 }
 
 .panel-danger.panel-type-border > .panel-footer {
-  border-color: #ddd;
+  border-color: rgba(85, 85, 85, 0.2);
 }
 
 .panel-danger.panel-type-boxed > .panel-heading {

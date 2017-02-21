@@ -12,10 +12,10 @@ class FeatureController extends ChopperController
 
         $this->view->params['pageBreadcrumb'] = [
             [
-                'label' => 'Features',
-                'url' => ['feature/index']
+                'label' => 'Home',
+                'url' => ['./.']
             ],
-            'Panels'
+            'UI Features'
         ];
         $this->view->params['pageTitle'] = 'Panels';
         $this->view->params['pageDescription'] = 'Useful panels you can use.';
