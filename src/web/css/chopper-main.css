@@ -632,18 +632,18 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
   }
   #main-sidebar ul.sidebar-nav li.heading {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   #main-sidebar ul.sidebar-nav li > a {
-    padding-left: 15px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 35px;
   }
   #main-sidebar ul.sidebar-nav li > a .menu-arrow {
-    right: 7px;
+    right: 12px;
   }
   #main-sidebar ul.sidebar-nav > li > a.active {
-    padding-left: 12px;
+    padding-left: 17px;
   }
   #main-sidebar ul.sidebar-nav ul.sub-menu > li.first {
     margin-top: 6px;
@@ -652,13 +652,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 6px;
   }
   #main-sidebar ul.sidebar-nav ul.sub-menu.level-2 > li > a {
-    padding-left: 42px;
+    padding-left: 47px;
   }
   #main-sidebar ul.sidebar-nav ul.sub-menu.level-3 > li > a {
-    padding-left: 52px;
+    padding-left: 57px;
   }
   #main-sidebar ul.sidebar-nav ul.sub-menu.level-4 > li > a, #main-sidebar ul.sidebar-nav ul.sub-menu.level-5 > li > a, #main-sidebar ul.sidebar-nav ul.sub-menu.level-6 > li > a {
-    padding-left: 62px;
+    padding-left: 67px;
   }
 }
 
