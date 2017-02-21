@@ -42,12 +42,22 @@ $this->beginPage();
         <header id="main-header">
             <nav class="navbar navbar-static-top">
                 <div class="container-fluid">
-                    <div id="logo-area"></div>
+                    <div id="logo-area">
+                        <a href="#">
+                            <img src="#" alt="logo-small" class="logo-small" />
+                            <img src="#" alt="logo-large" class="logo-large" />
+                        </a>
+                    </div>
 
                     <div class="left-menu">
                         <!-- Toggle icon for mobile view -->
-                        <a id="sidebar-toggle" class="navbar-toggle" href="javascript:void(0)" data-toggle="collapse"
+                        <a id="sidebar-drop-toggle" class="navbar-toggle visible-xs" href="javascript:void(0)" data-toggle="collapse"
                            data-target="#main-sidebar">
+                            <i class="mdi mdi-menu"></i>
+                        </a>
+
+                        <!-- Toggle icon for left sidebar menu -->
+                        <a id="sidebar-toggle" href="javascript:void(0)" class="navbar-toggle hidden-xs">
                             <i class="mdi mdi-menu"></i>
                         </a>
                     </div>

@@ -9,14 +9,15 @@ Yii2 Chopper Template Admin - Main SCSS File
 // mixins
 @import "../sass-bootstrap-3/mixins";
 
+@import "global/type";
+@import "layouts/common";
+
 // bootstrap overrides
 @import "bootstrap-overrides/_grid.scss";
 @import "bootstrap-overrides/navbar";
 @import "bootstrap-overrides/panels";
 
-@import "global/type";
-@import "layouts/common";
-
+@import "components/header";
 @import "components/sidebar-menu";
 
 @import "plugins/scrollator";
