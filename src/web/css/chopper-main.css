@@ -544,7 +544,7 @@ h1, h2, h3, h4, h5, h6 {
 #main-sidebar ul.sidebar-nav li > a .label {
   float: right;
   line-height: 14px;
-  padding: 3px 8px 3px 8px;
+  padding: 1px 8px 4px 8px;
   font-size: 10px;
   font-weight: 300;
   border-top-right-radius: 10px;
