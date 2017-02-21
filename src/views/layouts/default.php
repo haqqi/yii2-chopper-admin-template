@@ -44,8 +44,8 @@ $this->beginPage();
                 <div class="container-fluid">
                     <div id="logo-area">
                         <a href="#">
-                            <img src="<?php echo Chopper::getComponent()->getAssetUrl('img/logo-small.png') ?>" alt="logo-small" class="logo-small" />
-                            <img src="<?php echo Chopper::getComponent()->getAssetUrl('img/logo-large.png') ?>" alt="logo-large" class="logo-large" />
+                            <img src="<?php echo Chopper::getComponent()->getLogoSmallUrl(); ?>" alt="logo-small" class="logo-small" />
+                            <img src="<?php echo Chopper::getComponent()->getLogoLargeUrl(); ?>" alt="logo-large" class="logo-large" />
                         </a>
                     </div>
 

@@ -35,6 +35,10 @@ class Chopper extends Component
 
     /** @var string Path to sidebar meu item */
     public $sidebarMenuItemsPath;
+    
+    /** @var string Url of the logo. You can use relative, absolute, or full url in this, because chopper template will call the url with urlManager->create(); */
+    public $logoSmallUrl;
+    public $logoLargeUrl;
 
     public function __construct($config = [])
     {
@@ -83,5 +87,21 @@ class Chopper extends Component
         /** @var AssetBundle $assetBundleClass */
         $assetBundleClass = $this->assetBundleClass;
         $assetBundleClass::register($view);
+    }
+    
+    public function getLogoSmallUrl() {
+        if($this->logoSmallUrl === null) {
+            return $this->getAssetUrl('img/logo-small.png');
+        } else {
+            return \Yii::$app->urlManager->createUrl($this->logoSmallUrl);
+        }
+    }
+    
+    public function getLogoLargeUrl() {
+        if($this->logoLargeUrl === null) {
+            return $this->getAssetUrl('img/logo-large.png');
+        } else {
+            return \Yii::$app->urlManager->createUrl($this->logoLargeUrl);
+        }
     }
 }
