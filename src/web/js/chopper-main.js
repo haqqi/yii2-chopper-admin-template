@@ -11,9 +11,9 @@ $(document).ready(function () {
     var bottomOffset = $("#main-footer").innerHeight();
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
-    
+
     // shrink
-    if(windowWidth < lastWindowWidth) {
+    if (windowWidth < lastWindowWidth) {
       if (windowWidth < screenSmMin) {
         $('#main-sidebar').addClass('collapse');
         $("#main-sidebar").scrollator('hide'); // @note: there is a bug in scrollator if not hidden after resizing. The html content might be taller.
@@ -24,13 +24,17 @@ $(document).ready(function () {
         $("#main-sidebar").scrollator('show');
       }
     }
-    
+
     if (windowHeight > (topOffset + bottomOffset)) {
       var pageHeight = windowHeight - topOffset - bottomOffset;
       $("#page-wrapper").css("min-height", (pageHeight) + "px");
     }
-    
+
     lastWindowWidth = windowWidth;
+  });
+
+  $("#sidebar-toggle").on("click", function (e) {
+    console.log('aaa');
   });
 
   // navbar toggle change

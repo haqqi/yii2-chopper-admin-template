@@ -44,8 +44,8 @@ $this->beginPage();
                 <div class="container-fluid">
                     <div id="logo-area">
                         <a href="#">
-                            <img src="#" alt="logo-small" class="logo-small" />
-                            <img src="#" alt="logo-large" class="logo-large" />
+                            <img src="<?php echo Chopper::getComponent()->getAssetUrl('img/logo-small.png') ?>" alt="logo-small" class="logo-small" />
+                            <img src="<?php echo Chopper::getComponent()->getAssetUrl('img/logo-large.png') ?>" alt="logo-large" class="logo-large" />
                         </a>
                     </div>
 
@@ -58,7 +58,7 @@ $this->beginPage();
 
                         <!-- Toggle icon for left sidebar menu -->
                         <a id="sidebar-toggle" href="javascript:void(0)" class="navbar-toggle hidden-xs">
-                            <i class="mdi mdi-menu"></i>
+                            <i class="mdi mdi-publish mdi-rotate-270"></i>
                         </a>
                     </div>
                     

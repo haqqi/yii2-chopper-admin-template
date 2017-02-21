@@ -506,13 +506,22 @@ h1, h2, h3, h4, h5, h6 {
 
 #main-header #logo-area {
   float: left;
+  width: 50px;
+  max-height: 50px;
 }
 
 #main-header #logo-area a {
   display: block;
   overflow: hidden;
-  width: 50px;
   height: 50px;
+}
+
+#main-header #logo-area a .logo-small {
+  display: block;
+}
+
+#main-header #logo-area a .logo-large {
+  display: none;
 }
 
 #main-header .left-menu {
@@ -526,8 +535,14 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 20px;
     padding-right: 20px;
   }
-  #main-header #logo-area a {
-    width: 160px;
+  #main-header #logo-area {
+    width: 200px;
+  }
+  #main-header #logo-area a .logo-small {
+    display: none;
+  }
+  #main-header #logo-area a .logo-large {
+    display: block;
   }
   #main-header .left-menu {
     margin-left: 20px;

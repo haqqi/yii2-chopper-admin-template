@@ -5,12 +5,20 @@
     
     #logo-area {
         float: left;
+        width: 50px;
+        max-height: 50px;
         
         a {
             display: block;
             overflow: hidden;
-            width: 50px;
             height: 50px;
+            
+            .logo-small {
+                display: block;
+            }
+            .logo-large {
+                display: none;
+            }
         }
     }
     
@@ -27,8 +35,14 @@
         }
         
         #logo-area {
+            width: 200px;
             a {
-                width: 160px;
+                .logo-small {
+                    display: none;
+                }
+                .logo-large {
+                    display: block;
+                }
             }
         }
         
