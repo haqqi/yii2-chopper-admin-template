@@ -227,6 +227,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .main-sidebar-closed #main-sidebar ul.sidebar-nav > li:hover ul.level-2 {
     display: block !important;
+    height: auto !important;
   }
   .main-sidebar-closed #main-sidebar ul.sidebar-nav ul.sub-menu.level-2 > li > a {
     padding-left: 17px;

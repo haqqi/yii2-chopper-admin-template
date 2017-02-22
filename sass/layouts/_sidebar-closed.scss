@@ -98,6 +98,7 @@ $sidebar-menu-children-padding: 17px;
 
                         ul.level-2 {
                             display: block !important;
+                            height: auto !important; // fix for metismenu
                         }
                     }
                 }
