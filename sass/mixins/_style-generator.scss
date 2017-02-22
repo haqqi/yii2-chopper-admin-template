@@ -65,6 +65,16 @@
 				@media (min-width: $screen-sm-min) {
 					.main-sidebar-closed & {
 						background-color: $sidebar-bg;
+
+						&.active {
+							> a {
+								background-color: transparent;
+							}
+						}
+						
+						&:hover {
+							background-color: lighten($sidebar-bg, 2%);
+						}
 						
 						ul.level-2 {
 							background-color: $sidebar-bg;

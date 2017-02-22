@@ -1,7 +1,7 @@
 // this is included in the common.scss
 
 $sidebar-closed-width: 50px;
-$sidebar-menu-children-padding: 17px;
+$sidebar-menu-children-padding-close: 17px;
 
 @media (min-width: $screen-sm-min) {
     .main-sidebar-closed {
@@ -82,7 +82,7 @@ $sidebar-menu-children-padding: 17px;
                             
                             .menu-label {
                                 display: inline;
-                                margin-left: $sidebar-menu-children-padding + 11px;
+                                margin-left: $sidebar-menu-children-padding-close + 11px;
                             }
                             .label {
                                 display: none;
@@ -106,17 +106,17 @@ $sidebar-menu-children-padding: 17px;
                 ul.sub-menu {
                     &.level-2 {
                         > li > a {
-                            padding-left: $sidebar-menu-children-padding;
+                            padding-left: $sidebar-menu-children-padding-close;
                         }
                     }
                     &.level-3 {
                         > li > a {
-                            padding-left: $sidebar-menu-children-padding + 10px;
+                            padding-left: $sidebar-menu-children-padding-close + 10px;
                         }
                     }
                     &.level-4, &.level-5, &.level-6 {
                         > li > a {
-                            padding-left: $sidebar-menu-children-padding + 20px;
+                            padding-left: $sidebar-menu-children-padding-close + 20px;
                         }
                     }
                 }

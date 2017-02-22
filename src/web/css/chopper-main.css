@@ -757,15 +757,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main-sidebar ul.sidebar-nav ul.sub-menu.level-2 > li > a {
-  padding-left: 17px;
+  padding-left: 37px;
 }
 
 #main-sidebar ul.sidebar-nav ul.sub-menu.level-3 > li > a {
-  padding-left: 27px;
+  padding-left: 47px;
 }
 
 #main-sidebar ul.sidebar-nav ul.sub-menu.level-4 > li > a, #main-sidebar ul.sidebar-nav ul.sub-menu.level-5 > li > a, #main-sidebar ul.sidebar-nav ul.sub-menu.level-6 > li > a {
-  padding-left: 37px;
+  padding-left: 57px;
 }
 
 @media (min-width: 768px) {
@@ -794,13 +794,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 6px;
   }
   #main-sidebar ul.sidebar-nav ul.sub-menu.level-2 > li > a {
-    padding-left: 27px;
+    padding-left: 47px;
   }
   #main-sidebar ul.sidebar-nav ul.sub-menu.level-3 > li > a {
-    padding-left: 37px;
+    padding-left: 57px;
   }
   #main-sidebar ul.sidebar-nav ul.sub-menu.level-4 > li > a, #main-sidebar ul.sidebar-nav ul.sub-menu.level-5 > li > a, #main-sidebar ul.sidebar-nav ul.sub-menu.level-6 > li > a {
-    padding-left: 47px;
+    padding-left: 67px;
   }
 }
 

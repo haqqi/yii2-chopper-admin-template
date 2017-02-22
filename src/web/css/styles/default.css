@@ -52,6 +52,12 @@
   .main-sidebar-closed #main-sidebar ul.sidebar-nav > li {
     background-color: #394859;
   }
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav > li.active > a {
+    background-color: transparent;
+  }
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav > li:hover {
+    background-color: #3d4d5f;
+  }
   .main-sidebar-closed #main-sidebar ul.sidebar-nav > li ul.level-2 {
     background-color: #394859;
   }
