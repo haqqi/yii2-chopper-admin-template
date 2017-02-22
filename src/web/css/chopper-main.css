@@ -170,6 +170,9 @@ h1, h2, h3, h4, h5, h6 {
   .main-sidebar-closed #main-sidebar {
     width: 50px;
   }
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav ul.level-2 {
+    display: none;
+  }
   .main-sidebar-closed #main-sidebar ul.sidebar-nav li.heading {
     display: none;
   }

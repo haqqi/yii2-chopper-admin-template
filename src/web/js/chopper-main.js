@@ -38,7 +38,13 @@ $(document).ready(function () {
     $(this).find("i.mdi").toggleClass("mdi-rotate-270");
     $(this).find("i.mdi").toggleClass("mdi-rotate-90");
     
-    
+    if($("body").hasClass("main-sidebar-closed")) {
+      console.log("lepas metis");
+      $("#main-sidebar ul.sidebar-nav > li > a").attr("aria-disabled", "true");
+    } else {
+      console.log("pasang metis");
+      $("#main-sidebar ul.sidebar-nav > li > a").attr("aria-disabled", "false");
+    }
   });
 
   // navbar toggle change

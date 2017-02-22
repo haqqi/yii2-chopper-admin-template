@@ -29,6 +29,10 @@ $sidebar-closed-width: 50px;
             width: $sidebar-closed-width;
             
             ul.sidebar-nav {
+                ul.level-2 {
+                    display: none;
+                }
+                
                 li {
                     &.heading {
                         display: none;
