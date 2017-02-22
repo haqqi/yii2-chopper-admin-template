@@ -208,7 +208,7 @@ class SidebarMenu extends Menu
     {
         $label = ArrayHelper::getValue($item, 'label', '');
 
-        return sprintf('%s', $label);
+        return sprintf('<span class="menu-label">%s</span>', $label);
     }
 
     /**
