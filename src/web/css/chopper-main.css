@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .main-sidebar-closed #main-sidebar ul.sidebar-nav > li:hover > a .menu-label {
     display: inline;
-    margin-left: 25px;
+    margin-left: 28px;
   }
   .main-sidebar-closed #main-sidebar ul.sidebar-nav > li:hover > a .label {
     display: none;
@@ -227,6 +227,15 @@ h1, h2, h3, h4, h5, h6 {
   }
   .main-sidebar-closed #main-sidebar ul.sidebar-nav > li:hover ul.level-2 {
     display: block !important;
+  }
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav ul.sub-menu.level-2 > li > a {
+    padding-left: 17px;
+  }
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav ul.sub-menu.level-3 > li > a {
+    padding-left: 27px;
+  }
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav ul.sub-menu.level-4 > li > a, .main-sidebar-closed #main-sidebar ul.sidebar-nav ul.sub-menu.level-5 > li > a, .main-sidebar-closed #main-sidebar ul.sidebar-nav ul.sub-menu.level-6 > li > a {
+    padding-left: 37px;
   }
   .main-sidebar-closed #sidebar-wrapper {
     overflow-x: visible !important;
@@ -747,15 +756,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main-sidebar ul.sidebar-nav ul.sub-menu.level-2 > li > a {
-  padding-left: 37px;
+  padding-left: 17px;
 }
 
 #main-sidebar ul.sidebar-nav ul.sub-menu.level-3 > li > a {
-  padding-left: 47px;
+  padding-left: 27px;
 }
 
 #main-sidebar ul.sidebar-nav ul.sub-menu.level-4 > li > a, #main-sidebar ul.sidebar-nav ul.sub-menu.level-5 > li > a, #main-sidebar ul.sidebar-nav ul.sub-menu.level-6 > li > a {
-  padding-left: 57px;
+  padding-left: 37px;
 }
 
 @media (min-width: 768px) {
@@ -784,13 +793,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 6px;
   }
   #main-sidebar ul.sidebar-nav ul.sub-menu.level-2 > li > a {
-    padding-left: 47px;
+    padding-left: 27px;
   }
   #main-sidebar ul.sidebar-nav ul.sub-menu.level-3 > li > a {
-    padding-left: 57px;
+    padding-left: 37px;
   }
   #main-sidebar ul.sidebar-nav ul.sub-menu.level-4 > li > a, #main-sidebar ul.sidebar-nav ul.sub-menu.level-5 > li > a, #main-sidebar ul.sidebar-nav ul.sub-menu.level-6 > li > a {
-    padding-left: 67px;
+    padding-left: 47px;
   }
 }
 
