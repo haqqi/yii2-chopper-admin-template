@@ -41,9 +41,11 @@ $(document).ready(function () {
     if($("body").hasClass("main-sidebar-closed")) {
       console.log("lepas metis");
       $("#main-sidebar ul.sidebar-nav > li > a").attr("aria-disabled", "true");
+      $("#sidebar-wrapper").scrollator('hide');
     } else {
       console.log("pasang metis");
       $("#main-sidebar ul.sidebar-nav > li > a").attr("aria-disabled", "false");
+      $("#sidebar-wrapper").scrollator('show');
     }
   });
 

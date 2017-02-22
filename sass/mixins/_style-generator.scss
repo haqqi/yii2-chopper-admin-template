@@ -1,4 +1,6 @@
-
+// variables
+@import "../../sass-bootstrap-3/variables";
+@import "../global/variables";
 
 @mixin style-generator {
 	#main-header {
@@ -23,7 +25,7 @@
 		background-color: $sidebar-bg;
 		color: $sidebar-color;
 		
-		.sidebar-nav {
+		ul.sidebar-nav {
 			li {
 				// heading color
 				&.heading {
@@ -57,6 +59,16 @@
 				&.active {
 					> a {
 						background-color: lighten($sidebar-bg, 2%);
+					}
+				}
+				
+				@media (min-width: $screen-sm-min) {
+					.main-sidebar-closed & {
+						background-color: $sidebar-bg;
+						
+						ul.level-2 {
+							background-color: $sidebar-bg;
+						}
 					}
 				}
 			}

@@ -29,9 +29,6 @@ $sidebar-closed-width: 50px;
             width: $sidebar-closed-width;
             
             ul.sidebar-nav {
-                ul.level-2 {
-                    display: none;
-                }
                 
                 li {
                     &.heading {
@@ -41,10 +38,13 @@ $sidebar-closed-width: 50px;
 
                 // first menu
                 > li {
+                    position: relative;
+                    width: $sidebar-closed-width;
+                    
                     > a {
-                        
-                        padding-right: 5px;
+                        width: $sidebar-closed-width;
                         padding-left: 13px;
+                        padding-right: 0;
                         
                         .menu-label {
                             display: none;
@@ -64,8 +64,48 @@ $sidebar-closed-width: 50px;
                     &.heading + li {
                         margin-top: 20px;
                     }
+
+                    ul.level-2 {
+                        position: absolute;
+                        display: none;
+                        left: $sidebar-closed-width;
+                        top: 100%;
+                        min-width: $sidebar-width-sm;
+                        z-index: 400;
+                    }
+                    
+                    &:hover {
+                        width: $sidebar-width-sm + $sidebar-closed-width;
+                        > a {
+                            width: $sidebar-width-sm + $sidebar-closed-width;
+                            
+                            .menu-label {
+                                display: inline;
+                                margin-left: 25px;
+                            }
+                            .label {
+                                display: none;
+                            }
+                            .menu-arrow {
+                                display: none;
+                            }
+
+                            &.active {
+                                padding-left: 13px - $sidebar-menu-active-first-level-border-size;
+                            }
+                        }
+
+                        ul.level-2 {
+                            display: block !important;
+                        }
+                    }
                 }
             }
+        }
+        
+        #sidebar-wrapper {
+            overflow-x: visible !important ;
+            width: auto;
         }
         
         #page-wrapper {
