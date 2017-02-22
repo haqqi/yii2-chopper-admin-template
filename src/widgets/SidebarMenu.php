@@ -144,8 +144,8 @@ class SidebarMenu extends Menu
     {
         return (
             $item['level'] === 1 &&
-            ArrayHelper::getValue($item, 'url', null) === null &&
-            ArrayHelper::getValue($item, 'items', null) === null
+            empty(ArrayHelper::getValue($item, 'url', null)) &&
+            empty(ArrayHelper::getValue($item, 'items', null))
         );
     }
 
