@@ -1,5 +1,7 @@
 // this is included in the common.scss
 
+$sidebar-closed-width: 50px;
+
 @media (min-width: $screen-sm-min) {
     .main-sidebar-closed {
         #main-header {
@@ -8,7 +10,7 @@
             }
             
             #logo-area {
-                width: 50px;
+                width: $sidebar-closed-width;
                 
                 .logo-small {
                     display: block;
@@ -21,6 +23,49 @@
             .left-menu {
                 margin-left: 0;
             }
+        }
+        
+        #main-sidebar {
+            width: $sidebar-closed-width;
+            
+            ul.sidebar-nav {
+                li {
+                    &.heading {
+                        display: none;
+                    }
+                }
+
+                // first menu
+                > li {
+                    > a {
+                        
+                        padding-right: 5px;
+                        padding-left: 13px;
+                        
+                        .menu-label {
+                            display: none;
+                        }
+                        .label {
+                            display: none;
+                        }
+                        .menu-arrow {
+                            display: none;
+                        }
+                        
+                        &.active {
+                            padding-left: 13px - $sidebar-menu-active-first-level-border-size;
+                        }
+                    }
+                    
+                    &.heading + li {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        
+        #page-wrapper {
+            margin-left: $sidebar-closed-width;
         }
     }
 }

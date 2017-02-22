@@ -16,12 +16,12 @@ $(document).ready(function () {
     if (windowWidth < lastWindowWidth) {
       if (windowWidth < screenSmMin) {
         $('#main-sidebar').addClass('collapse');
-        $("#main-sidebar").scrollator('hide'); // @note: there is a bug in scrollator if not hidden after resizing. The html content might be taller.
+        $("#sidebar-wrapper").scrollator('hide'); // @note: there is a bug in scrollator if not hidden after resizing. The html content might be taller.
       }
     } else { // expand
       if (windowWidth >= screenSmMin) {
         $('#main-sidebar').removeClass('collapse').css("height", "100%");
-        $("#main-sidebar").scrollator('show');
+        $("#sidebar-wrapper").scrollator('show');
       }
     }
 
@@ -37,6 +37,8 @@ $(document).ready(function () {
     $("body").toggleClass("main-sidebar-closed");
     $(this).find("i.mdi").toggleClass("mdi-rotate-270");
     $(this).find("i.mdi").toggleClass("mdi-rotate-90");
+    
+    
   });
 
   // navbar toggle change
@@ -48,7 +50,7 @@ $(document).ready(function () {
     $("#sidebar-drop-toggle i").removeClass("mdi-menu").addClass("mdi-close");
   });
 
-  $("#main-sidebar").scrollator({
+  $("#sidebar-wrapper").scrollator({
     customClass: 'sidebar-scroll'
   });
 });

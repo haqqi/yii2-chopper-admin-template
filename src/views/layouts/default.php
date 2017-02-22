@@ -74,7 +74,9 @@ $this->beginPage();
         <div id="page-container">
             <!-- Left navbar-sidebar -->
             <aside id="main-sidebar" class="navbar-collapse collapse">
-                <?php echo SidebarMenu::widget(); ?>
+                <div id="sidebar-wrapper">
+                    <?php echo SidebarMenu::widget(); ?>
+                </div>
             </aside>
             <!-- Left navbar-sidebar end -->
 

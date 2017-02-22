@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 300;
+  z-index: 200;
 }
 
 @media (min-width: 768px) {
@@ -34,6 +34,13 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0;
     max-height: 100%;
   }
+}
+
+#sidebar-wrapper {
+  position: relative;
+  z-index: 300;
+  width: 100%;
+  height: 100%;
 }
 
 #page-container {
@@ -159,6 +166,34 @@ h1, h2, h3, h4, h5, h6 {
   }
   .main-sidebar-closed #main-header .left-menu {
     margin-left: 0;
+  }
+  .main-sidebar-closed #main-sidebar {
+    width: 50px;
+  }
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav li.heading {
+    display: none;
+  }
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav > li > a {
+    padding-right: 5px;
+    padding-left: 13px;
+  }
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav > li > a .menu-label {
+    display: none;
+  }
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav > li > a .label {
+    display: none;
+  }
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav > li > a .menu-arrow {
+    display: none;
+  }
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav > li > a.active {
+    padding-left: 10px;
+  }
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav > li.heading + li {
+    margin-top: 20px;
+  }
+  .main-sidebar-closed #page-wrapper {
+    margin-left: 50px;
   }
 }
 
