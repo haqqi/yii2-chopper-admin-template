@@ -34,7 +34,9 @@ $(document).ready(function () {
   });
 
   $("#sidebar-toggle").on("click", function (e) {
-    console.log('aaa');
+    $("body").toggleClass("main-sidebar-closed");
+    $(this).find("i.mdi").toggleClass("mdi-rotate-270");
+    $(this).find("i.mdi").toggleClass("mdi-rotate-90");
   });
 
   // navbar toggle change

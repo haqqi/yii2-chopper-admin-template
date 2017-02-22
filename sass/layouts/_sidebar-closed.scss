@@ -1,0 +1,26 @@
+// this is included in the common.scss
+
+@media (min-width: $screen-sm-min) {
+    .main-sidebar-closed {
+        #main-header {
+            .container-fluid {
+                padding-left: 0;
+            }
+            
+            #logo-area {
+                width: 50px;
+                
+                .logo-small {
+                    display: block;
+                }
+                .logo-large {
+                    display: none;
+                }
+            }
+            
+            .left-menu {
+                margin-left: 0;
+            }
+        }
+    }
+}
