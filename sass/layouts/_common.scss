@@ -13,8 +13,10 @@
     top: 0;
     width: 100%;
     z-index: 200;
+    height: 300px;
 
     @media (min-width: $screen-sm-min) {
+        height: 100%;
         width: $sidebar-width-sm;
         bottom: 0;
         max-height: 100%;
@@ -23,6 +25,7 @@
 
 #sidebar-wrapper {
     position: absolute;
+    overflow: scroll;
     z-index: 250;
     max-height: 100%;
     width: 100%;
