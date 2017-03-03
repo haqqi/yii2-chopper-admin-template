@@ -2,6 +2,8 @@
 
 namespace haqqi\chopper\assets;
 
+use haqqi\chopper\Chopper;
+use yii\base\InvalidConfigException;
 use yii\web\AssetBundle;
 
 class ChopperAsset extends AssetBundle
@@ -26,8 +28,7 @@ class ChopperAsset extends AssetBundle
         'https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,700,700i',
         'https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700',
         
-        'css/chopper-main.css',
-        'css/styles/default.css' // default style   
+        'css/chopper-main.css'
     ];
     
     public $js = [
@@ -46,6 +47,15 @@ class ChopperAsset extends AssetBundle
     }
     
     private function _setupStyle() {
+        $style = Chopper::getComponent()->style;
         
+        if(is_file(\Yii::getAlias($this->sourcePath . '/css/styles/') . $style . '.css')) {
+            $style = 'css/styles/' . $style . '.css';
+        } else {
+            throw new InvalidConfigException('Style name is not exists');
+        }
+
+        // add css style
+        array_push($this->css, $style);
     }
 }

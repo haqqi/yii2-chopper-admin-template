@@ -39,6 +39,8 @@ class Chopper extends Component
     /** @var string Url of the logo. You can use relative, absolute, or full url in this, because chopper template will call the url with urlManager->create(); */
     public $logoSmallUrl;
     public $logoLargeUrl;
+    
+    public $style = self::STYLE_DEFAULT;
 
     public function __construct($config = [])
     {
