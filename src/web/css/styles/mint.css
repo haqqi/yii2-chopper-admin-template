@@ -1,0 +1,116 @@
+#main-header .navbar {
+  background-color: #4DC5D6;
+}
+
+.navbar-toggle {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-toggle:hover, .navbar-toggle:focus {
+  color: white;
+}
+
+.navbar-toggle:hover {
+  background-color: #59c9d9;
+}
+
+#main-sidebar {
+  background-color: #6acedd;
+  color: #6b6b6b;
+}
+
+#main-sidebar ul.sidebar-nav li.heading {
+  color: #000000;
+}
+
+#main-sidebar ul.sidebar-nav li > a {
+  color: #000000;
+}
+
+#main-sidebar ul.sidebar-nav li > a:hover {
+  color: #0d0d0d;
+  background-color: #72d1df;
+}
+
+#main-sidebar ul.sidebar-nav li.active > a {
+  background-color: #72d1df;
+}
+
+#main-sidebar ul.sidebar-nav > li {
+  border-top: 1px solid #76d3e0;
+}
+
+#main-sidebar ul.sidebar-nav > li > a.active {
+  border-left-color: #AE5A63;
+}
+
+#main-sidebar ul.sidebar-nav > li.active > a {
+  background-color: #72d1df;
+}
+
+@media (min-width: 768px) {
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav > li {
+    background-color: #6acedd;
+  }
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav > li.active > a {
+    background-color: transparent;
+  }
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav > li:hover {
+    background-color: #72d1df;
+  }
+  .main-sidebar-closed #main-sidebar ul.sidebar-nav > li ul.level-2 {
+    background-color: #6acedd;
+  }
+}
+
+.sidebar-scroll .scrollator_handle {
+  background-color: rgba(200, 200, 200, 0.4);
+}
+
+#page-wrapper {
+  background-color: #ffffff;
+}
+
+#page-header {
+  background-color: white;
+  color: inherit;
+}
+
+#page-header .breadcrumb > li > a {
+  color: #AE5A63;
+}
+
+#page-header .breadcrumb > li > a:hover {
+  color: #bf7c83;
+}
+
+#page-header .breadcrumb > .active {
+  color: #888888;
+}
+
+#page-header .breadcrumb + h1.title {
+  border-top-color: #eeeeee;
+}
+
+#page-header h1.title {
+  color: #444444;
+}
+
+#page-header .description {
+  color: #888888;
+}
+
+#main-footer {
+  background-color: #7fd5e1;
+  color: #7993B0;
+}
+
+#main-footer a {
+  color: #99adc3;
+}
+
+#main-footer a:hover, #main-footer a:active, #main-footer a:focus {
+  color: #a0b2c7;
+}
+
+/*# sourceMappingURL=../maps/styles/mint.css.map */

@@ -1,0 +1,34 @@
+
+@import "../mixins/style-generator";
+
+// variables area
+$navbar-bg          : #4DC5D6;
+$navbar-toggle-color: white;
+
+$sidebar-bg         : lighten($navbar-bg, 7%);
+$sidebar-color      : #6b6b6b;
+
+$sidebar-heading-color : #000000;
+$sidebar-menu-color    : #000000;
+$sidebar-scroll-color  : rgba(200, 200, 200, 0.4);
+$sidebar-menu-active-first-level-border-color : #AE5A63;
+
+$page-wrapper-bg    : #ffffff;
+
+$page-header-background-color               : white;
+$page-header-color                          : inherit;
+$page-header-border-color                   : #eeeeee;
+$page-header-breadcrumb-link-color          : $sidebar-menu-active-first-level-border-color;
+$page-header-breadcrumb-active-color        : #888888;
+$page-header-title-color                    : #444444;
+$page-header-description-color              : #888888;
+
+$footer-bg          : lighten($navbar-bg, 12%);
+$footer-color       : #7993B0;
+
+// end of variables area
+////////////////////////
+
+// use mixin
+
+@include style-generator();
