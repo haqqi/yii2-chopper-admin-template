@@ -22,6 +22,10 @@ $this->beginPage();
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <!-- icon -->
+        <?php
+        $dataIcon = Chopper::getComponent()->getLogoFav();
+        ?>
+        <link rel="icon" type="<?php echo $dataIcon['type']?>" href="<?php echo $dataIcon['image']?>">
         <?php echo Html::csrfMetaTags(); ?>
         <title><?php echo Html::encode($this->title); ?></title>
 
