@@ -2,18 +2,18 @@
 @import "../mixins/style-generator";
 
 // variables area
-$navbar-bg          : #4DC5D6;
+$navbar-bg          : #31b9e5;
 $navbar-toggle-color: white;
 
-$sidebar-bg         : lighten($navbar-bg, 7%);
-$sidebar-color      : #6b6b6b;
+$sidebar-bg         : lighten(#2b3643, 7%);
+$sidebar-color      : #edf1f5;
 
-$sidebar-heading-color : #000000;
-$sidebar-menu-color    : #000000;
+$sidebar-heading-color : lighten(#2b3643, 60%);
+$sidebar-menu-color    : lighten(#2b3643, 50%);
 $sidebar-scroll-color  : rgba(200, 200, 200, 0.4);
 $sidebar-menu-active-first-level-border-color : #AE5A63;
 
-$page-wrapper-bg    : #ffffff;
+$page-wrapper-bg    : #edf1f5;
 
 $page-header-background-color               : white;
 $page-header-color                          : inherit;
@@ -23,7 +23,7 @@ $page-header-breadcrumb-active-color        : #888888;
 $page-header-title-color                    : #444444;
 $page-header-description-color              : #888888;
 
-$footer-bg          : lighten($navbar-bg, 12%);
+$footer-bg          : lighten(#2b3643, 12%);
 $footer-color       : #7993B0;
 
 // end of variables area
