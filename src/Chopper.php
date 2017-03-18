@@ -39,7 +39,8 @@ class Chopper extends Component
     /** @var string Url of the logo. You can use relative, absolute, or full url in this, because chopper template will call the url with urlManager->create(); */
     public $logoSmallUrl;
     public $logoLargeUrl;
-    
+    public $logoFav;
+
     public $style = self::STYLE_DEFAULT;
 
     public function __construct($config = [])
@@ -105,5 +106,17 @@ class Chopper extends Component
         } else {
             return \Yii::$app->urlManager->createUrl($this->logoLargeUrl);
         }
+    }
+
+    public function getLogoFav() {
+        if(empty($this->logoFav)) {
+            $data['image'] = $this->getAssetUrl('img/logo-small.png');
+            $data['type'] = 'image/png';
+        } else {
+            $dataImg = $this->logoFav;
+            $data['image'] = \Yii::$app->urlManager->createUrl($dataImg[0]);
+            $data['type'] = $dataImg[1];
+        }
+        return $data;
     }
 }
