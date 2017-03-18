@@ -30,5 +30,13 @@ $footer-color       : #7993B0;
 ////////////////////////
 
 // use mixin
-
+#main-header {
+	.navbar {
+		position: fixed;
+		width:100%;
+	}
+}
+#wrapper {
+    top: 50px;
+}
 @include style-generator();

@@ -1,4 +1,13 @@
 #main-header .navbar {
+  position: fixed;
+  width: 100%;
+}
+
+#wrapper {
+  top: 50px;
+}
+
+#main-header .navbar {
   background-color: #31b9e5;
 }
 
