@@ -1,4 +1,13 @@
 #main-header .navbar {
+  position: fixed;
+  width: 100%;
+}
+
+#wrapper {
+  top: 50px;
+}
+
+#main-header .navbar {
   background-color: #31b9e5;
 }
 
@@ -41,7 +50,7 @@
 }
 
 #main-sidebar ul.sidebar-nav > li > a.active {
-  border-left-color: #AE5A63;
+  border-left-color: #31b9e5;
 }
 
 #main-sidebar ul.sidebar-nav > li.active > a {
@@ -77,11 +86,11 @@
 }
 
 #page-header .breadcrumb > li > a {
-  color: #AE5A63;
+  color: #31b9e5;
 }
 
 #page-header .breadcrumb > li > a:hover {
-  color: #bf7c83;
+  color: #5ec8eb;
 }
 
 #page-header .breadcrumb > .active {

@@ -11,7 +11,7 @@ $sidebar-color      : #edf1f5;
 $sidebar-heading-color : lighten(#2b3643, 60%);
 $sidebar-menu-color    : lighten(#2b3643, 50%);
 $sidebar-scroll-color  : rgba(200, 200, 200, 0.4);
-$sidebar-menu-active-first-level-border-color : #AE5A63;
+$sidebar-menu-active-first-level-border-color : $navbar-bg;
 
 $page-wrapper-bg    : #edf1f5;
 
@@ -30,5 +30,13 @@ $footer-color       : #7993B0;
 ////////////////////////
 
 // use mixin
-
+#main-header {
+	.navbar {
+		position: fixed;
+		width:100%;
+	}
+}
+#wrapper {
+    top: 50px;
+}
 @include style-generator();
