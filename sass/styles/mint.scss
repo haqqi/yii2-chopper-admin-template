@@ -2,7 +2,7 @@
 @import "../mixins/style-generator";
 
 // variables area
-$navbar-bg          : #31b9e5;
+$navbar-bg          : #30B9E5;
 $navbar-toggle-color: white;
 
 $sidebar-bg         : lighten(#2b3643, 7%);
@@ -28,15 +28,12 @@ $footer-color       : #7993B0;
 
 // end of variables area
 ////////////////////////
-
-// use mixin
 #main-header {
-	.navbar {
+	margin-bottom:50px;
+ 	.navbar {
 		position: fixed;
 		width:100%;
-	}
-}
-#wrapper {
-    top: 50px;
+		top:0;
+    }
 }
 @include style-generator();
