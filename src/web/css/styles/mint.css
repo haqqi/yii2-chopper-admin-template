@@ -1,14 +1,15 @@
+#main-header {
+  margin-bottom: 50px;
+}
+
 #main-header .navbar {
   position: fixed;
   width: 100%;
-}
-
-#wrapper {
-  top: 50px;
+  top: 0;
 }
 
 #main-header .navbar {
-  background-color: #31b9e5;
+  background-color: #30B9E5;
 }
 
 .navbar-toggle {
@@ -20,7 +21,7 @@
 }
 
 .navbar-toggle:hover {
-  background-color: #3fbee7;
+  background-color: #3ebee7;
 }
 
 #main-sidebar {
@@ -50,7 +51,7 @@
 }
 
 #main-sidebar ul.sidebar-nav > li > a.active {
-  border-left-color: #31b9e5;
+  border-left-color: #30B9E5;
 }
 
 #main-sidebar ul.sidebar-nav > li.active > a {
@@ -86,11 +87,11 @@
 }
 
 #page-header .breadcrumb > li > a {
-  color: #31b9e5;
+  color: #30B9E5;
 }
 
 #page-header .breadcrumb > li > a:hover {
-  color: #5ec8eb;
+  color: #5dc8eb;
 }
 
 #page-header .breadcrumb > .active {
