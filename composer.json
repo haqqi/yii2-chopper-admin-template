@@ -37,6 +37,9 @@
       "url": "https://asset-packagist.org"
     }
   ],
+  "extra": {
+    "bootstrap": "haqqi\\chopper\\Bootstrap"
+  },
   "autoload": {
     "psr-4": {
       "haqqi\\chopper\\": "src/"
