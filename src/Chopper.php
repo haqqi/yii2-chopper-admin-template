@@ -2,7 +2,7 @@
 
 namespace haqqi\chopper;
 
-use haqqi\chopper\assets\ChopperAsset;
+use haqqi\chopper\assets\ChopperBasicAsset;
 use yii\base\Component;
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
@@ -21,6 +21,7 @@ class Chopper extends Component
     ////////////////////////////////////////////
 
     // layout alternatives
+    const LAYOUT_BASE = 'base';
     const LAYOUT_DEFAULT = 'default';
 
     // style alternatives
@@ -45,7 +46,7 @@ class Chopper extends Component
 
     public function __construct($config = [])
     {
-        $this->assetBundleClass = ChopperAsset::className();
+        $this->assetBundleClass = ChopperBasicAsset::className();
 
         $this->sidebarMenuItemsPath = __DIR__ . '/config/sidebar-menu.php';
 
@@ -78,11 +79,11 @@ class Chopper extends Component
     {
         $bundles = \Yii::$app->assetManager->bundles;
 
-        if (!isset($bundles[ChopperAsset::className()])) {
-            throw new InvalidConfigException('Asset bundle class must use or depends on ChopperAsset bundle.');
+        if (!isset($bundles[ChopperBasicAsset::className()])) {
+            throw new InvalidConfigException('Asset bundle class must use or depends on '.ChopperBasicAsset::className().' bundle.');
         }
 
-        return $bundles[ChopperAsset::className()]->baseUrl . '/' . $filepath;
+        return $bundles[ChopperBasicAsset::className()]->baseUrl . '/' . $filepath;
     }
 
     public function registerThemeAsset($view)
@@ -106,17 +107,5 @@ class Chopper extends Component
         } else {
             return \Yii::$app->urlManager->createUrl($this->logoLargeUrl);
         }
-    }
-
-    public function getLogoFav() {
-        if(empty($this->logoFav)) {
-            $data['image'] = $this->getAssetUrl('img/logo-small.png');
-            $data['type'] = 'image/png';
-        } else {
-            $dataImg = $this->logoFav;
-            $data['image'] = \Yii::$app->urlManager->createUrl($dataImg[0]);
-            $data['type'] = $dataImg[1];
-        }
-        return $data;
     }
 }
