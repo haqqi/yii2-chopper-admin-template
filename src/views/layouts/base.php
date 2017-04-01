@@ -6,8 +6,6 @@ use haqqi\chopper\Chopper;
 use yii\helpers\Html;
 use yii\helpers\Url;
 
-Chopper::getComponent()->registerThemeAsset($this);
-
 $this->beginPage();
 
 ?>
@@ -34,7 +32,7 @@ $this->beginPage();
     </head>
     <body>
     <?php $this->beginBody(); ?>
-
+    
     <div id="wrapper">
         <?php echo $content; ?>
     </div>
