@@ -3,6 +3,10 @@
 @import "../global/variables";
 
 @mixin style-generator {
+	body {
+		background: $page-wrapper-bg;
+	}
+	
 	#main-header {
 		.navbar {
 			background-color: $navbar-bg;
