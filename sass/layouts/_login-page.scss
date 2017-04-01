@@ -28,6 +28,7 @@ $login-box-width: 500px;
         h1 {
             font-size: 20px;
             text-align: center;
+            margin-top: 0;
             margin-bottom: 20px;
         }
     }
@@ -48,6 +49,7 @@ $login-box-width: 500px;
             padding: 20px $page-content-padding;
             
             h1 {
+                margin-top: 20px;
                 margin-bottom: 40px;
             }
         }
