@@ -13,7 +13,7 @@ $this->beginContent('@haqqi/chopper/views/layouts/base.php');
         <nav class="navbar navbar-static-top">
             <div class="container-fluid">
                 <div id="logo-area">
-                    <a href="#">
+                    <a href="<?php echo Yii::$app->getHomeUrl(); ?>">
                         <img src="<?php echo Chopper::getComponent()->getLogoSmallUrl(); ?>" alt="logo-small"
                              class="logo-small"/>
                         <img src="<?php echo Chopper::getComponent()->getLogoLargeUrl(); ?>" alt="logo-large"
