@@ -18,7 +18,7 @@ use yii\web\View;
             </header>
 
             <div class="login-content">
-                <h1>Admin Login</h1>
+                <h1><?= isset($this->params['pageTitle']) ? $this->params['pageTitle'] : 'Admin Login'; ?></h1>
                 
                 <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
 
