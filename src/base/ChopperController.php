@@ -8,10 +8,10 @@ class ChopperController extends BasicController
 {
     public $layout = '@haqqi/chopper/views/layouts/default';
 
-    public function beforeAction($action)
+    public function init()
     {
-        \Yii::$app->chopper->assetBundleClass = ChopperAsset::className();
+        parent::init();
 
-        return parent::beforeAction($action);
+        \Yii::$app->chopper->assetBundleClass = ChopperAsset::className();
     }
 }
