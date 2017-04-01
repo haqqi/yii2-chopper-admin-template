@@ -3,9 +3,8 @@
 namespace haqqi\chopper\base;
 
 use haqqi\chopper\assets\ChopperAsset;
-use yii\web\Controller;
 
-class ChopperController extends Controller
+class ChopperController extends BasicController
 {
     public $layout = '@haqqi/chopper/views/layouts/default';
 
