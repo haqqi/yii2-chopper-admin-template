@@ -250,6 +250,61 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.login-wrapper {
+  margin: auto;
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.login-wrapper .login-box {
+  box-shadow: 0 0 5px 5px rgba(85, 85, 85, 0.2);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.login-wrapper .login-logo {
+  text-align: center;
+  padding: 20px 10px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.login-wrapper .login-content {
+  background: #fff;
+  padding: 20px 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.login-wrapper .login-content h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-wrapper .login-footer {
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .login-wrapper {
+    width: 500px;
+    padding-top: 100px;
+  }
+  .login-wrapper .login-logo {
+    padding: 20px 20px;
+  }
+  .login-wrapper .login-content {
+    padding: 20px 20px;
+  }
+  .login-wrapper .login-content h1 {
+    margin-bottom: 40px;
+  }
+}
+
 .container-fluid, .container {
   margin-right: auto;
   margin-left: auto;
