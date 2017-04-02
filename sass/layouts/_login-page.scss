@@ -8,7 +8,7 @@ $login-box-width: 500px;
     padding: 20px $page-content-padding-xs;
     
     .login-box {
-        @include box-shadow(0 0 5px 5px rgba(#555555, 0.2));
+        @include box-shadow(0 0 5px 0 rgba(#555555, 0.2));
         @include border-top-radius(5px);
         @include border-bottom-radius(5px);
     }
