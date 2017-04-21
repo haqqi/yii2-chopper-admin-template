@@ -34,7 +34,9 @@ $this->beginPage();
     <?php $this->beginBody(); ?>
     
     <div id="wrapper">
-        <?php echo $content; ?>
+        <section id="page-content">
+            <?= $content; ?>
+        </div>
     </div>
 
     <?php $this->endBody(); ?>
