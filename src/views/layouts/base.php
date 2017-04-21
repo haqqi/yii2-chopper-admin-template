@@ -32,11 +32,9 @@ $this->beginPage();
     </head>
     <body>
     <?php $this->beginBody(); ?>
-    
+
     <div id="wrapper">
-        <section id="page-content">
-            <?= $content; ?>
-        </div>
+        <?= $content; ?>
     </div>
 
     <?php $this->endBody(); ?>
