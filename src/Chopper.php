@@ -97,7 +97,7 @@ class Chopper extends Component
         if($this->logoSmallUrl === null) {
             return $this->getAssetUrl('img/logo-small.png');
         } else {
-            return \Yii::$app->urlManager->createUrl($this->logoSmallUrl);
+            return $this->logoSmallUrl;
         }
     }
     
@@ -105,7 +105,7 @@ class Chopper extends Component
         if($this->logoLargeUrl === null) {
             return $this->getAssetUrl('img/logo-large.png');
         } else {
-            return \Yii::$app->urlManager->createUrl($this->logoLargeUrl);
+            return $this->logoLargeUrl;
         }
     }
     
@@ -113,7 +113,7 @@ class Chopper extends Component
         if($this->logoLoginUrl === null) {
             return $this->getAssetUrl('img/logo-login.png');
         } else {
-            return \Yii::$app->urlManager->createUrl($this->logoLoginUrl);
+            return $this->logoLoginUrl;
         }
     }
 }
