@@ -37,10 +37,13 @@ class Chopper extends Component
     /** @var string Path to sidebar meu item */
     public $sidebarMenuItemsPath;
     
-    /** @var string Url of the logo. You can use relative, absolute, or full url in this, because chopper template will call the url with urlManager->create(); */
+    /** @var string|array URL of the logo. You can use relative, absolute, or full URL in this, because chopper template will call the URL with `urlManager->create()`. */
     public $logoSmallUrl;
     public $logoLargeUrl;
     public $logoLoginUrl;
+
+    /** @var boolean Use the logo URLs as is (without `urlManager->create()`). */
+    public $fixedLogoUrls;
 
     public $style = self::STYLE_DEFAULT;
 
@@ -94,26 +97,38 @@ class Chopper extends Component
     }
     
     public function getLogoSmallUrl() {
-        if($this->logoSmallUrl === null) {
+        if ($this->logoSmallUrl === null) {
             return $this->getAssetUrl('img/logo-small.png');
-        } else {
+        }
+
+        if (is_string($this->logoSmallUrl) && $this->fixedLogoUrls === true) {
             return $this->logoSmallUrl;
         }
+
+        return \Yii::$app->urlManager->createUrl($this->logoSmallUrl);
     }
     
     public function getLogoLargeUrl() {
-        if($this->logoLargeUrl === null) {
+        if ($this->logoLargeUrl === null) {
             return $this->getAssetUrl('img/logo-large.png');
-        } else {
+        }
+
+        if (is_string($this->logoLargeUrl) && $this->fixedLogoUrls === true) {
             return $this->logoLargeUrl;
         }
+
+        return \Yii::$app->urlManager->createUrl($this->logoLargeUrl);
     }
     
     public function getLogoLoginUrl() {
-        if($this->logoLoginUrl === null) {
+        if ($this->logoLoginUrl === null) {
             return $this->getAssetUrl('img/logo-login.png');
-        } else {
+        }
+
+        if (is_string($this->logoLoginUrl) && $this->fixedLogoUrls === true) {
             return $this->logoLoginUrl;
         }
+
+        return \Yii::$app->urlManager->createUrl($this->logoLoginUrl);
     }
 }
