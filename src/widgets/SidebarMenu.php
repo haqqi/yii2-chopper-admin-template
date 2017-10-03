@@ -190,10 +190,15 @@ class SidebarMenu extends Menu
      */
     private function _formatItemUrl($item)
     {
-        $url = ArrayHelper::getValue($item, 'url', '#');
+        $url      = ArrayHelper::getValue($item, 'url', '#');
+        $fixedUrl = ArrayHelper::getValue($item, 'fixedUrl');
 
         if ('#' === $url) {
             return 'javascript:;';
+        }
+
+        if (is_string($url) && $fixedUrl === true) {
+            return $url;
         }
 
         return \Yii::$app->urlManager->createUrl($url);
