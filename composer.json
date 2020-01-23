@@ -23,7 +23,7 @@
         "mimicreative/yii2-scrollator": "*",
         "rmrevin/yii2-fontawesome": "~2.17",
         "mervick/yii2-material-design-icons": "^2.0",
-        "mimicreative/yii2-datatables": "@dev"
+        "mimicreative/yii2-datatables": "^1.0"
     },
     "require-dev": {
         "firephp/firephp-core": "dev-master",
